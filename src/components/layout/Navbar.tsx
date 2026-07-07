@@ -27,7 +27,6 @@ export const Navbar = () => {
             <Link to="/" className={navLinkClass('/')}>Home</Link>
             
             <Link to="/solutions" className={navLinkClass('/solutions')}>Solutions</Link>
-            <Link to="/labs" className={navLinkClass('/labs')}>Labs</Link>
             
             <Link to="/company" className={navLinkClass('/company')}>Company</Link>
             <Link to="/roadmap" className={navLinkClass('/roadmap')}>Roadmap</Link>

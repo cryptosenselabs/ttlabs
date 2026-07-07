@@ -13,7 +13,7 @@ export const HeroVisual = () => {
         initial={{ y: 20, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.8 }}
-        className="relative z-10 glass-card bg-white/5 border border-white/10 rounded-2xl p-6 shadow-2xl backdrop-blur-md"
+        className="relative z-10 bg-white/5 border border-white/10 rounded-2xl p-6 shadow-2xl backdrop-blur-md"
       >
         <div className="flex items-center gap-3 mb-6 border-b border-white/10 pb-4">
           <div className="p-2 bg-blue-500/20 rounded-lg">
