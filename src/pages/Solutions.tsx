@@ -1,149 +1,93 @@
 import React from 'react';
-import { PageHero } from '../components/ui/PageHero';
+import { ModernPageHeader } from '../components/ui/ModernPageHeader';
+import { ArchitectureStackVisual } from '../components/ui/ArchitectureStackVisual';
+import { FeatureCard } from '../components/ui/FeatureCard';
+import { SectionHeading } from '../components/ui/SectionHeading';
 import { CTASection } from '../components/ui/CTASection';
-import { SEO } from '../components/layout/SEO';
 import { Layout } from '../components/layout/Layout';
-import { Database, Zap, Layers, Cpu, Link as LinkIcon, BarChart3, ChevronRight } from 'lucide-react';
-import { Link } from 'react-router-dom';
+import { SEO } from '../components/layout/SEO';
+import { Database, Zap, Globe, Network, Code, Activity } from 'lucide-react';
 
 export const Solutions = () => {
   return (
     <Layout>
       <SEO 
         title="Software Solutions | Blockchain, Payments, SaaS and Automation" 
-        description="We build practical software systems around blockchain, payments, automation, SaaS, and digital operations."
+        description="Third Leap Labs LLC designs and builds blockchain-enabled platforms, Web3 utilities, payment workflows, SaaS systems, and automation solutions."
       />
       
-      <PageHero 
-        eyebrow="Our Work"
+      <ModernPageHeader 
+        eyebrow="What We Build"
         title="Software Solutions"
-        subtitle="We build practical software systems around blockchain, payments, automation, SaaS, and digital operations."
+        subtitle="We build reliable systems across blockchain, payments, SaaS, and internal automation."
+        rightVisual={<ArchitectureStackVisual />}
+        theme="light"
       />
 
-      <div className="max-w-[1120px] mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-20 space-y-24">
-        
-        {/* Solutions Grid */}
-        <section>
-          <div className="text-center mb-12">
-            <h2 className="text-[32px] font-bold text-[#0F172A]">Core Areas</h2>
-            <p className="text-[#475569] mt-4 max-w-2xl mx-auto">The primary areas where we design and build production-ready systems.</p>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            <div className="bg-white border border-[#E2E8F0] p-8 rounded-2xl shadow-sm hover:shadow-md transition-shadow">
-              <div className="p-3 bg-blue-50 text-blue-600 rounded-lg w-fit mb-6">
-                <LinkIcon className="w-6 h-6" />
-              </div>
-              <h3 className="text-[20px] font-bold text-[#0F172A] mb-3">Blockchain Solutions</h3>
-              <p className="text-[15px] text-[#475569] leading-relaxed">
-                Third Leap Labs builds blockchain-enabled software for real-world workflows. This may include wallet-aware applications, transaction visibility, token activity tools, verification layers, and Web3 user interfaces.
-              </p>
-            </div>
-            
-            <div className="bg-white border border-[#E2E8F0] p-8 rounded-2xl shadow-sm hover:shadow-md transition-shadow">
-              <div className="p-3 bg-blue-50 text-blue-600 rounded-lg w-fit mb-6">
-                <Zap className="w-6 h-6" />
-              </div>
-              <h3 className="text-[20px] font-bold text-[#0F172A] mb-3">Payment Workflow Systems</h3>
-              <p className="text-[15px] text-[#475569] leading-relaxed">
-                We build payment software around payment links, QR payment requests, receipt records, transaction status tracking, and non-custodial payment flows.
-              </p>
-            </div>
-            
-            <div className="bg-white border border-[#E2E8F0] p-8 rounded-2xl shadow-sm hover:shadow-md transition-shadow">
-              <div className="p-3 bg-blue-50 text-blue-600 rounded-lg w-fit mb-6">
-                <Layers className="w-6 h-6" />
-              </div>
-              <h3 className="text-[20px] font-bold text-[#0F172A] mb-3">SaaS and Web Platforms</h3>
-              <p className="text-[15px] text-[#475569] leading-relaxed">
-                We design and build modern SaaS platforms, dashboards, portals, admin tools, workflow systems, and customer-facing web applications.
-              </p>
-            </div>
-            
-            <div className="bg-white border border-[#E2E8F0] p-8 rounded-2xl shadow-sm hover:shadow-md transition-shadow">
-              <div className="p-3 bg-blue-50 text-blue-600 rounded-lg w-fit mb-6">
-                <Cpu className="w-6 h-6" />
-              </div>
-              <h3 className="text-[20px] font-bold text-[#0F172A] mb-3">Automation and Internal Tools</h3>
-              <p className="text-[15px] text-[#475569] leading-relaxed">
-                We help businesses reduce repetitive manual work by building automation systems, internal tools, and integrations.
-              </p>
-            </div>
-            
-            <div className="bg-white border border-[#E2E8F0] p-8 rounded-2xl shadow-sm hover:shadow-md transition-shadow">
-              <div className="p-3 bg-blue-50 text-blue-600 rounded-lg w-fit mb-6">
-                <BarChart3 className="w-6 h-6" />
-              </div>
-              <h3 className="text-[20px] font-bold text-[#0F172A] mb-3">Web3 Intelligence Utilities</h3>
-              <p className="text-[15px] text-[#475569] leading-relaxed">
-                We build tools that help users and teams understand on-chain activity with more context while maintaining responsible boundaries.
-              </p>
-            </div>
-            
-            <div className="bg-slate-50 border border-[#E2E8F0] p-8 rounded-2xl shadow-sm hover:shadow-md transition-shadow flex flex-col justify-center text-center">
-              <h3 className="text-[20px] font-bold text-[#0F172A] mb-3">Technical Architecture</h3>
-              <p className="text-[15px] text-[#475569] leading-relaxed mb-6">
-                We help shape software from idea to architecture to first serious version.
-              </p>
-              <Link to="/contact" className="text-blue-600 font-medium hover:text-blue-700 flex items-center justify-center gap-1">
-                Partner with us <ChevronRight className="w-4 h-4" />
-              </Link>
-            </div>
-          </div>
-        </section>
+      <section className="py-24 px-4 sm:px-6 lg:px-8 max-w-[1120px] mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <FeatureCard 
+            title="Blockchain Platforms" 
+            description="We design and build blockchain-aware software systems that support visibility, verification, wallet-aware workflows, and Web3 integrations without unnecessary hype." 
+            icon={<Database className="w-6 h-6 text-cyan-600" />} 
+          />
+          <FeatureCard 
+            title="Payment Systems" 
+            description="We create payment request flows, QR payments, receipt records, and non-custodial payment workflow software for blockchain-based payment use cases." 
+            icon={<Zap className="w-6 h-6 text-blue-600" />} 
+          />
+          <FeatureCard 
+            title="SaaS & Web Platforms" 
+            description="We build dashboards, portals, admin systems, workflow platforms, and cloud-based applications for businesses and product teams." 
+            icon={<Network className="w-6 h-6 text-cyan-600" />} 
+          />
+          <FeatureCard 
+            title="Automation & Internal Tools" 
+            description="We help reduce manual work by connecting tools, data, and workflows into reliable internal software systems." 
+            icon={<Code className="w-6 h-6 text-indigo-600" />} 
+          />
+          <FeatureCard 
+            title="Web3 Intelligence Utilities" 
+            description="We build practical utilities for communities, builders, and digital ecosystems, including wallet intelligence and on-chain visibility tools." 
+            icon={<Globe className="w-6 h-6 text-indigo-600" />} 
+          />
+          <FeatureCard 
+            title="Data & Operational Views" 
+            description="We build systems that organize complex information into clearer dashboards, summaries, alerts, and operational views." 
+            icon={<Activity className="w-6 h-6 text-blue-600" />} 
+          />
+        </div>
+      </section>
 
-        {/* Internal Labs and Initiatives */}
-        <section className="bg-slate-50 border border-[#E2E8F0] rounded-3xl p-8 md:p-12">
-          <div className="mb-12">
-            <h2 className="text-[32px] font-bold text-[#0F172A] mb-4">Internal Labs and Initiatives</h2>
-            <p className="text-[16px] md:text-[18px] text-[#475569] leading-relaxed max-w-3xl">
-              We develop internal initiatives that explore specific use cases in blockchain intelligence, payment workflows, and software automation to test new product architectures.
-            </p>
+      <section className="py-24 px-4 sm:px-6 lg:px-8 bg-[#F1F5F9] border-y border-[#E2E8F0]">
+        <div className="max-w-[1120px] mx-auto">
+          <div className="max-w-3xl mb-16">
+            <SectionHeading 
+              title="Architecture Approach" 
+              subtitle="Software should be maintainable, secure, and built for the actual problem at hand."
+            />
           </div>
           
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-            <div className="bg-white rounded-2xl p-8 border border-[#E2E8F0] shadow-sm hover:shadow-md transition-all">
-              <div className="flex items-center gap-4 mb-6">
-                <div className="p-3 bg-blue-50 rounded-xl">
-                  <Database className="w-8 h-8 text-blue-600" />
-                </div>
-                <div>
-                  <h3 className="text-[22px] font-bold text-[#0F172A]">WhaleScanner</h3>
-                  <div className="text-sm font-medium text-blue-600">Web3 wallet intelligence</div>
-                </div>
-              </div>
-              <p className="text-[#475569] leading-relaxed mb-8">
-                WhaleScanner is an internal Web3 intelligence initiative focused on wallet activity visibility, whale movement monitoring, suspicious pattern awareness, and AI-assisted wallet behavior summaries.
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div className="modern-card p-8 border-l-4 border-l-blue-500">
+              <h3 className="text-[20px] font-bold text-[#0F172A] mb-4">Pragmatic Tech Stacks</h3>
+              <p className="text-[16px] text-[#475569] leading-relaxed">
+                We prefer stable, well-understood technologies over unproven hype. Whether it’s a modern frontend framework, a scalable backend architecture, or a targeted blockchain integration, the tech stack is chosen based on what scales safely and is easy to maintain.
               </p>
-              <Link to="/labs/whalescanner" className="inline-flex items-center gap-2 text-white bg-[#0F172A] hover:bg-blue-600 transition-colors px-6 py-3 rounded-lg font-medium">
-                View WhaleScanner <ChevronRight className="w-4 h-4" />
-              </Link>
             </div>
-            
-            <div className="bg-white rounded-2xl p-8 border border-[#E2E8F0] shadow-sm hover:shadow-md transition-all">
-              <div className="flex items-center gap-4 mb-6">
-                <div className="p-3 bg-cyan-50 rounded-xl">
-                  <Zap className="w-8 h-8 text-cyan-600" />
-                </div>
-                <div>
-                  <h3 className="text-[22px] font-bold text-[#0F172A]">GoPaySol</h3>
-                  <div className="text-sm font-medium text-cyan-600">Solana payment links</div>
-                </div>
-              </div>
-              <p className="text-[#475569] leading-relaxed mb-8">
-                GoPaySol is an internal payment workflow initiative focused on Solana payment links, QR payment requests, receipt records, and non-custodial payment verification flows.
+            <div className="modern-card p-8 border-l-4 border-l-indigo-500">
+              <h3 className="text-[20px] font-bold text-[#0F172A] mb-4">Security by Design</h3>
+              <p className="text-[16px] text-[#475569] leading-relaxed">
+                Security isn't a feature added at the end. For Web3 systems, this means strict non-custodial boundaries. For SaaS platforms, it means proper authentication, role-based access, and secure data handling from day one.
               </p>
-              <Link to="/labs/gopaysol" className="inline-flex items-center gap-2 text-white bg-[#0F172A] hover:bg-cyan-600 transition-colors px-6 py-3 rounded-lg font-medium">
-                View GoPaySol <ChevronRight className="w-4 h-4" />
-              </Link>
             </div>
           </div>
-        </section>
-
-      </div>
+        </div>
+      </section>
 
       <CTASection 
-        title="Looking for a technical partner?"
-        description="Third Leap Labs can help move an idea from early concept to structured architecture and production-ready software."
+        title="Ready to build?"
+        description="Whether you need a blockchain integration, a payment workflow, or a custom SaaS platform, Third Leap Labs is ready to partner with you."
         buttonText="Contact Third Leap Labs"
         to="/contact"
       />

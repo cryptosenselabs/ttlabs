@@ -1,5 +1,5 @@
 import React from 'react';
-import { PageHero } from '../components/ui/PageHero';
+import { ModernPageHeader } from '../components/ui/ModernPageHeader';
 import { SEO } from '../components/layout/SEO';
 import { Layout } from '../components/layout/Layout';
 
@@ -11,10 +11,11 @@ export const LegalDisclaimer = () => {
         description="Important legal information regarding Third Leap Labs LLC."
       />
       
-      <PageHero 
+      <ModernPageHeader 
         eyebrow="Legal"
         title="Disclaimer"
         subtitle="Important legal information regarding Third Leap Labs LLC."
+        theme="light"
       />
 
       <div className="max-w-[800px] mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-20">

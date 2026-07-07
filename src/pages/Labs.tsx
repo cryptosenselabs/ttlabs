@@ -1,10 +1,11 @@
 import React from 'react';
-import { PageHero } from '../components/ui/PageHero';
+import { ModernPageHeader } from '../components/ui/ModernPageHeader';
+import { LabsVisual } from '../components/ui/LabsVisual';
 import { ProductCard } from '../components/ui/ProductCard';
 import { CTASection } from '../components/ui/CTASection';
 import { SEO } from '../components/layout/SEO';
 import { Layout } from '../components/layout/Layout';
-import { Database, Zap } from 'lucide-react';
+import { Database, Zap, Sparkles } from 'lucide-react';
 
 export const Labs = () => {
   return (
@@ -14,16 +15,33 @@ export const Labs = () => {
         description="Internal labs and initiatives at Third Leap Labs LLC."
       />
       
-      <PageHero 
+      <ModernPageHeader 
         eyebrow="Labs"
         title="Internal Initiatives"
         subtitle="Exploring specific use cases in blockchain intelligence, payment workflows, and software automation to test new product architectures."
+        rightVisual={<LabsVisual />}
+        theme="light"
       />
 
-      <div className="max-w-[1120px] mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-20 space-y-24">
+      <div className="max-w-[1120px] mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24 space-y-24">
         
+        {/* Intro Section */}
+        <section className="max-w-3xl">
+          <div className="flex items-center gap-3 mb-6">
+            <Sparkles className="w-6 h-6 text-blue-600" />
+            <h2 className="text-[28px] font-bold text-[#0F172A]">Why we build internally</h2>
+          </div>
+          <p className="text-[16px] text-[#475569] leading-relaxed mb-6">
+            Third Leap Labs explores architecture patterns and Web3 boundaries through internal initiatives. This allows us to test assumptions, build robust templates, and understand the real friction points in blockchain integrations and payment workflows.
+          </p>
+          <p className="text-[16px] text-[#475569] leading-relaxed">
+            WhaleScanner and GoPaySol act as proving grounds for our engineering standards, ensuring that when we partner with clients, we are building on battle-tested concepts.
+          </p>
+        </section>
+
         {/* Internal Labs and Initiatives */}
         <section>
+          <h2 className="text-[28px] font-bold text-[#0F172A] mb-8">Active Initiatives</h2>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
             <ProductCard 
               title="WhaleScanner"
@@ -37,8 +55,8 @@ export const Labs = () => {
               ]}
               icon={Database}
               to="/labs/whalescanner"
-              buttonText="View WhaleScanner Initiative"
-              accentColorClass="text-[var(--color-accent-cyan)]"
+              buttonText="View WhaleScanner"
+              accentColorClass="text-cyan-600"
               isFeatured={true}
             />
             <ProductCard 
@@ -53,8 +71,8 @@ export const Labs = () => {
               ]}
               icon={Zap}
               to="/labs/gopaysol"
-              buttonText="View GoPaySol Initiative"
-              accentColorClass="text-[var(--color-accent-magenta)]"
+              buttonText="View GoPaySol"
+              accentColorClass="text-indigo-600"
               isFeatured={true}
             />
           </div>
