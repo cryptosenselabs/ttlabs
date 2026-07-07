@@ -9,7 +9,7 @@ export const Footer = () => {
           
           <div className="col-span-1 md:col-span-1">
             <Link to="/" className="text-xl font-medium tracking-tight text-slate-900 flex items-center gap-2 mb-6">
-              <img src="/logo.png" alt="Third Leap Labs Logo" className="h-6 w-auto" />
+              <img src="/logo.svg" alt="Third Leap Labs Logo" className="h-6 w-auto" />
               <span>Third Leap Labs</span>
             </Link>
             <p className="text-slate-600 text-sm mb-6 leading-relaxed pr-4">

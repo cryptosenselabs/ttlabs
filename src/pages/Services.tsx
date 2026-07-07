@@ -19,10 +19,12 @@ export const Services = () => {
         subtitle="Third Leap Labs helps founders, product teams, and businesses design, build, and modernize software products with an architecture-first mindset."
       />
 
-      <section className="py-8 px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto text-center text-lg text-slate-600 leading-relaxed">
-        <p>
-          We support product work from early idea to implementation. Our services are useful for teams that need clear technical direction, product structure, reliable engineering, and practical delivery.
-        </p>
+      <section className="py-8 px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto">
+        <div className="glass-card p-8 md:p-12 text-center text-lg text-slate-600 leading-relaxed relative z-10">
+          <p>
+            We support product work from early idea to implementation. Our services are useful for teams that need clear technical direction, product structure, reliable engineering, and practical delivery.
+          </p>
+        </div>
       </section>
 
       <section className="py-24 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
@@ -40,33 +42,33 @@ export const Services = () => {
         </div>
       </section>
 
-      <section className="py-24 px-4 sm:px-6 lg:px-8 bg-slate-50 border-y border-slate-200">
-        <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16">
+      <section className="py-24 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 relative z-10">
           <div>
             <SectionHeading title="How We Work" />
-            <div className="space-y-6 mt-8">
+            <div className="space-y-6 mt-8 glass-card p-8 md:p-10">
               <div className="flex items-start gap-4">
-                <div className="w-8 h-8 rounded-full bg-slate-900 text-white font-bold flex items-center justify-center flex-shrink-0">1</div>
+                <div className="w-8 h-8 rounded-full bg-slate-900 text-white font-bold flex items-center justify-center flex-shrink-0 shadow-md">1</div>
                 <div><h3 className="font-bold text-lg text-slate-900">Understand the problem</h3></div>
               </div>
               <div className="flex items-start gap-4">
-                <div className="w-8 h-8 rounded-full bg-slate-900 text-white font-bold flex items-center justify-center flex-shrink-0">2</div>
+                <div className="w-8 h-8 rounded-full bg-slate-900 text-white font-bold flex items-center justify-center flex-shrink-0 shadow-md">2</div>
                 <div><h3 className="font-bold text-lg text-slate-900">Shape the product direction</h3></div>
               </div>
               <div className="flex items-start gap-4">
-                <div className="w-8 h-8 rounded-full bg-slate-900 text-white font-bold flex items-center justify-center flex-shrink-0">3</div>
+                <div className="w-8 h-8 rounded-full bg-slate-900 text-white font-bold flex items-center justify-center flex-shrink-0 shadow-md">3</div>
                 <div><h3 className="font-bold text-lg text-slate-900">Define the architecture</h3></div>
               </div>
               <div className="flex items-start gap-4">
-                <div className="w-8 h-8 rounded-full bg-slate-900 text-white font-bold flex items-center justify-center flex-shrink-0">4</div>
+                <div className="w-8 h-8 rounded-full bg-slate-900 text-white font-bold flex items-center justify-center flex-shrink-0 shadow-md">4</div>
                 <div><h3 className="font-bold text-lg text-slate-900">Build the first serious version</h3></div>
               </div>
               <div className="flex items-start gap-4">
-                <div className="w-8 h-8 rounded-full bg-slate-900 text-white font-bold flex items-center justify-center flex-shrink-0">5</div>
+                <div className="w-8 h-8 rounded-full bg-slate-900 text-white font-bold flex items-center justify-center flex-shrink-0 shadow-md">5</div>
                 <div><h3 className="font-bold text-lg text-slate-900">Validate and improve</h3></div>
               </div>
               <div className="flex items-start gap-4">
-                <div className="w-8 h-8 rounded-full bg-slate-900 text-white font-bold flex items-center justify-center flex-shrink-0">6</div>
+                <div className="w-8 h-8 rounded-full bg-slate-900 text-white font-bold flex items-center justify-center flex-shrink-0 shadow-md">6</div>
                 <div><h3 className="font-bold text-lg text-slate-900">Prepare for scale and maintainability</h3></div>
               </div>
             </div>
