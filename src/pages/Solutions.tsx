@@ -10,7 +10,7 @@ export const Solutions = () => {
   return (
     <Layout>
       <SEO 
-        title="Software Solutions | Third Leap Labs LLC" 
+        title="Software Solutions | Blockchain, Payments, SaaS and Automation" 
         description="We build practical software systems around blockchain, payments, automation, SaaS, and digital operations."
       />
       

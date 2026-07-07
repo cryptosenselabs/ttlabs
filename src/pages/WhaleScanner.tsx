@@ -11,7 +11,7 @@ export const WhaleScanner = () => {
   return (
     <Layout>
       <SEO 
-        title="WhaleScanner | Web3 Wallet Intelligence" 
+        title="WhaleScanner | Web3 Wallet Intelligence Initiative" 
         description="Web3 wallet intelligence and whale activity visibility for communities, builders, analysts, and users who need better context around on-chain behavior."
       />
       

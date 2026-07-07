@@ -13,7 +13,7 @@ export const Home = () => {
   return (
     <Layout>
       <SEO 
-        title="Third Leap Labs LLC | Software Solutions" 
+        title="Third Leap Labs LLC | Software Solutions for the Next Digital Leap" 
         description="Third Leap Labs LLC builds software solutions around blockchain, payments, SaaS, automation, and digital platforms."
       />
       

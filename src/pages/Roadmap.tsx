@@ -9,7 +9,7 @@ export const Roadmap = () => {
   return (
     <Layout>
       <SEO 
-        title="Roadmap | Third Leap Labs LLC" 
+        title="Roadmap | Third Leap Labs Direction" 
         description="The current direction for Third Leap Labs, its solution areas, and internal lab initiatives."
       />
       

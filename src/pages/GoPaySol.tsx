@@ -11,7 +11,7 @@ export const GoPaySol = () => {
   return (
     <Layout>
       <SEO 
-        title="GoPaySol | Solana Payment Links and QR Payments" 
+        title="GoPaySol | Solana Payment Workflow Initiative" 
         description="Solana payment links, QR payments, receipts, and non-custodial payment workflows for freelancers, creators, Web3 teams, and businesses."
       />
       
