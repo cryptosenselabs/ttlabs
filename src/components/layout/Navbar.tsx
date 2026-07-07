@@ -32,9 +32,7 @@ export const Navbar = () => {
           <div className="hidden md:flex items-center space-x-1">
             <Link to="/" className={navLinkClass('/')}>Home</Link>
             <Link to="/solutions" className={navLinkClass('/solutions')}>Solutions</Link>
-            <Link to="/labs" className={navLinkClass('/labs')}>Labs</Link>
             <Link to="/company" className={navLinkClass('/company')}>Company</Link>
-            <Link to="/roadmap" className={navLinkClass('/roadmap')}>Roadmap</Link>
             <Link to="/contact" className={navLinkClass('/contact')}>Contact</Link>
           </div>
           
@@ -57,9 +55,7 @@ export const Navbar = () => {
             <div className="px-4 pt-2 pb-6 space-y-1 shadow-inner">
               <Link to="/" onClick={toggleMenu} className={`block px-4 py-3 rounded-xl text-[16px] font-medium transition-colors ${isActive('/') ? 'text-[#0F172A] bg-slate-50' : 'text-[#475569] hover:text-[#0F172A] hover:bg-slate-50'}`}>Home</Link>
               <Link to="/solutions" onClick={toggleMenu} className={`block px-4 py-3 rounded-xl text-[16px] font-medium transition-colors ${isActive('/solutions') ? 'text-[#0F172A] bg-slate-50' : 'text-[#475569] hover:text-[#0F172A] hover:bg-slate-50'}`}>Solutions</Link>
-              <Link to="/labs" onClick={toggleMenu} className={`block px-4 py-3 rounded-xl text-[16px] font-medium transition-colors ${isActive('/labs') ? 'text-[#0F172A] bg-slate-50' : 'text-[#475569] hover:text-[#0F172A] hover:bg-slate-50'}`}>Labs</Link>
               <Link to="/company" onClick={toggleMenu} className={`block px-4 py-3 rounded-xl text-[16px] font-medium transition-colors ${isActive('/company') ? 'text-[#0F172A] bg-slate-50' : 'text-[#475569] hover:text-[#0F172A] hover:bg-slate-50'}`}>Company</Link>
-              <Link to="/roadmap" onClick={toggleMenu} className={`block px-4 py-3 rounded-xl text-[16px] font-medium transition-colors ${isActive('/roadmap') ? 'text-[#0F172A] bg-slate-50' : 'text-[#475569] hover:text-[#0F172A] hover:bg-slate-50'}`}>Roadmap</Link>
               <Link to="/contact" onClick={toggleMenu} className={`block px-4 py-3 rounded-xl text-[16px] font-medium transition-colors ${isActive('/contact') ? 'text-[#0F172A] bg-slate-50' : 'text-[#475569] hover:text-[#0F172A] hover:bg-slate-50'}`}>Contact</Link>
             </div>
           </motion.div>

@@ -4,8 +4,6 @@ import { Company } from './pages/Company';
 import { Solutions } from './pages/Solutions';
 import { WhaleScanner } from './pages/WhaleScanner';
 import { GoPaySol } from './pages/GoPaySol';
-import { Labs } from './pages/Labs';
-import { Roadmap } from './pages/Roadmap';
 import { Contact } from './pages/Contact';
 import { LegalDisclaimer } from './pages/LegalDisclaimer';
 import { PrivacyPolicy } from './pages/PrivacyPolicy';
@@ -19,10 +17,8 @@ function App() {
       <Route path="/" element={<Home />} />
       <Route path="/solutions" element={<Solutions />} />
       <Route path="/company" element={<Company />} />
-      <Route path="/labs" element={<Labs />} />
       <Route path="/labs/whalescanner" element={<WhaleScanner />} />
       <Route path="/labs/gopaysol" element={<GoPaySol />} />
-      <Route path="/roadmap" element={<Roadmap />} />
       <Route path="/contact" element={<Contact />} />
       <Route path="/legal-disclaimer" element={<LegalDisclaimer />} />
       <Route path="/privacy-policy" element={<PrivacyPolicy />} />

@@ -37,8 +37,7 @@ export const Footer = () => {
           <div>
             <h3 className="text-[var(--color-primary-text)] font-semibold mb-4 tracking-wider text-xs uppercase">Company</h3>
             <ul className="space-y-3 text-sm">
-              <li><Link to="/company" className="text-[var(--color-secondary-text)] hover:text-[var(--color-primary-text)] transition-colors">About Us</Link></li>
-              <li><Link to="/roadmap" className="text-[var(--color-secondary-text)] hover:text-[var(--color-primary-text)] transition-colors">Roadmap</Link></li>
+              <li><Link to="/company" className="text-[var(--color-secondary-text)] hover:text-[var(--color-primary-text)] transition-colors">Company</Link></li>
               <li><Link to="/contact" className="text-[var(--color-secondary-text)] hover:text-[var(--color-primary-text)] transition-colors">Contact</Link></li>
             </ul>
           </div>

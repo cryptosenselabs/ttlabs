@@ -6,7 +6,8 @@ import { SectionHeading } from '../components/ui/SectionHeading';
 import { CTASection } from '../components/ui/CTASection';
 import { Layout } from '../components/layout/Layout';
 import { SEO } from '../components/layout/SEO';
-import { Database, Zap, Globe, Network, Code, Activity } from 'lucide-react';
+import { Database, Zap, Globe, Network, Code, Activity, Sparkles } from 'lucide-react';
+import { ProductCard } from '../components/ui/ProductCard';
 
 export const Solutions = () => {
   return (
@@ -83,6 +84,60 @@ export const Solutions = () => {
             </div>
           </div>
         </div>
+      </section>
+
+      <section className="pt-[72px] pb-[72px] px-4 sm:px-6 lg:px-8 max-w-[1120px] mx-auto space-y-16">
+        {/* Intro Section */}
+        <section className="max-w-3xl">
+          <div className="flex items-center gap-3 mb-6">
+            <Sparkles className="w-6 h-6 text-blue-600" />
+            <h2 className="text-[28px] font-bold text-[#0F172A]">Why we build internally</h2>
+          </div>
+          <p className="text-[16px] text-[#475569] leading-relaxed mb-6">
+            Third Leap Labs explores architecture patterns and Web3 boundaries through internal initiatives. This allows us to test assumptions, build robust templates, and understand the real friction points in blockchain integrations and payment workflows.
+          </p>
+          <p className="text-[16px] text-[#475569] leading-relaxed">
+            WhaleScanner and GoPaySol act as proving grounds for our engineering standards, ensuring that when we partner with clients, we are building on battle-tested concepts.
+          </p>
+        </section>
+
+        {/* Internal Labs and Initiatives */}
+        <section>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            <ProductCard 
+              title="WhaleScanner"
+              subtitle="Web3 wallet intelligence and visibility"
+              description="WhaleScanner is an internal Web3 intelligence initiative focused on wallet activity visibility, whale movement monitoring, suspicious pattern awareness, and AI-assisted wallet behavior summaries."
+              features={[
+                "Wallet activity visibility",
+                "Suspicious pattern awareness",
+                "Whale movement monitoring",
+                "AI-assisted summaries"
+              ]}
+              icon={Database}
+              to="/labs/whalescanner"
+              buttonText="View initiative"
+              accentColorClass="text-cyan-600"
+              isFeatured={true}
+            />
+            <ProductCard 
+              title="GoPaySol"
+              subtitle="Solana payment links and QR workflows"
+              description="GoPaySol is an internal payment workflow initiative focused on Solana payment links, QR payment requests, receipt records, and non-custodial payment verification flows."
+              features={[
+                "Solana payment links",
+                "QR code payment requests",
+                "Payment verification flows",
+                "Non-custodial workflows"
+              ]}
+              icon={Zap}
+              to="/labs/gopaysol"
+              buttonText="View initiative"
+              accentColorClass="text-indigo-600"
+              isFeatured={true}
+            />
+          </div>
+        </section>
       </section>
 
       <CTASection 
