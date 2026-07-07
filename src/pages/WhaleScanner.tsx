@@ -43,13 +43,13 @@ export const WhaleScanner = () => {
           <p>
             Crypto communities often rely on incomplete information. Screenshots move faster than facts. Influencer claims are difficult to verify. Wallets may appear important without a clear history. Project teams may need to explain wallet behavior repeatedly. Users may see large transactions but have no simple way to understand the broader pattern.
           </p>
-          <p className="font-semibold text-[var(--color-text-white)]">
+          <p className="font-semibold text-[var(--color-primary-text)]">
             WhaleScanner is designed to reduce that confusion.
           </p>
         </div>
       </section>
 
-      <section className="py-24 px-4 sm:px-6 lg:px-8 bg-[var(--color-secondary-dark)] border-y border-[var(--color-border)]">
+      <section className="py-24 px-4 sm:px-6 lg:px-8 bg-[var(--color-secondary-bg)] border-y border-[var(--color-border-main)]">
         <div className="max-w-7xl mx-auto">
           <SectionHeading title="What WhaleScanner Is" subtitle="A context layer for wallet activity" />
           <div className="prose prose-invert max-w-none text-lg text-[var(--color-muted-text)] leading-relaxed mb-16">
@@ -98,7 +98,7 @@ export const WhaleScanner = () => {
         </div>
       </section>
 
-      <section className="py-24 px-4 sm:px-6 lg:px-8 bg-[var(--color-secondary-dark)] border-y border-[var(--color-border)]">
+      <section className="py-24 px-4 sm:px-6 lg:px-8 bg-[var(--color-secondary-bg)] border-y border-[var(--color-border-main)]">
         <div className="max-w-7xl mx-auto">
           <SectionHeading title="Product Direction" subtitle="Where WhaleScanner is going" />
           <div className="prose prose-invert max-w-none text-[var(--color-muted-text)] leading-relaxed text-lg mb-12">
@@ -120,23 +120,23 @@ export const WhaleScanner = () => {
         <SectionHeading title="What WhaleScanner Is Not" />
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-8">
           <div className="glass-card p-6 border-t-4 border-red-500 bg-red-500/5">
-            <h3 className="font-semibold text-[var(--color-text-white)] mb-2">Not a trading signal platform</h3>
+            <h3 className="font-semibold text-[var(--color-primary-text)] mb-2">Not a trading signal platform</h3>
             <p className="text-sm text-[var(--color-muted-text)]">WhaleScanner does not tell users when to buy, sell, or hold any asset.</p>
           </div>
           <div className="glass-card p-6 border-t-4 border-red-500 bg-red-500/5">
-            <h3 className="font-semibold text-[var(--color-text-white)] mb-2">Not a financial advisor</h3>
+            <h3 className="font-semibold text-[var(--color-primary-text)] mb-2">Not a financial advisor</h3>
             <p className="text-sm text-[var(--color-muted-text)]">The product provides information and context only. Users are responsible for their own decisions.</p>
           </div>
           <div className="glass-card p-6 border-t-4 border-red-500 bg-red-500/5">
-            <h3 className="font-semibold text-[var(--color-text-white)] mb-2">Not a price prediction tool</h3>
+            <h3 className="font-semibold text-[var(--color-primary-text)] mb-2">Not a price prediction tool</h3>
             <p className="text-sm text-[var(--color-muted-text)]">Wallet activity may be useful context, but it does not guarantee market direction.</p>
           </div>
           <div className="glass-card p-6 border-t-4 border-red-500 bg-red-500/5">
-            <h3 className="font-semibold text-[var(--color-text-white)] mb-2">Not a custody service</h3>
+            <h3 className="font-semibold text-[var(--color-primary-text)] mb-2">Not a custody service</h3>
             <p className="text-sm text-[var(--color-muted-text)]">WhaleScanner does not hold user funds and does not need private keys or seed phrases.</p>
           </div>
           <div className="glass-card p-6 border-t-4 border-red-500 bg-red-500/5">
-            <h3 className="font-semibold text-[var(--color-text-white)] mb-2">Not a replacement for research</h3>
+            <h3 className="font-semibold text-[var(--color-primary-text)] mb-2">Not a replacement for research</h3>
             <p className="text-sm text-[var(--color-muted-text)]">On-chain visibility is only one part of responsible research.</p>
           </div>
         </div>

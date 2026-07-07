@@ -43,13 +43,13 @@ export const GoPaySol = () => {
           <p>
             Without a proper workflow, crypto payments can become confusing. Screenshots may be used as proof. Wallet addresses can be copied incorrectly. Buyers may send the wrong amount. Sellers may struggle to confirm payment status quickly.
           </p>
-          <p className="font-semibold text-[var(--color-text-white)]">
+          <p className="font-semibold text-[var(--color-primary-text)]">
             GoPaySol is designed to make that process cleaner.
           </p>
         </div>
       </section>
 
-      <section className="py-24 px-4 sm:px-6 lg:px-8 bg-[var(--color-secondary-dark)] border-y border-[var(--color-border)]">
+      <section className="py-24 px-4 sm:px-6 lg:px-8 bg-[var(--color-secondary-bg)] border-y border-[var(--color-border-main)]">
         <div className="max-w-7xl mx-auto">
           <SectionHeading title="What GoPaySol Is" subtitle="A payment request and verification workflow for Solana" />
           <div className="prose prose-invert max-w-none text-lg text-[var(--color-muted-text)] leading-relaxed mb-16">
@@ -78,29 +78,29 @@ export const GoPaySol = () => {
         <SectionHeading title="How It Works" centered />
         
         <div className="grid grid-cols-1 md:grid-cols-5 gap-4 mt-16 relative">
-          <div className="hidden md:block absolute top-1/2 left-0 w-full h-0.5 bg-[var(--color-border)] -z-10 -translate-y-1/2"></div>
+          <div className="hidden md:block absolute top-1/2 left-0 w-full h-0.5 bg-[var(--color-border-main)] -z-10 -translate-y-1/2"></div>
           
-          <div className="glass-card p-6 text-center border-t-4 border-t-[var(--color-accent-cyan)] bg-[var(--color-primary-dark)]">
+          <div className="glass-card p-6 text-center border-t-4 border-t-[var(--color-accent-cyan)] bg-[var(--color-card-surface)]">
             <div className="text-sm font-bold text-[var(--color-accent-cyan)] mb-2 uppercase tracking-wider">Step 1</div>
             <h3 className="font-bold mb-2">Create a payment request</h3>
             <p className="text-sm text-[var(--color-muted-text)]">The seller enters the payment details, such as amount, wallet destination, description, and optional reference information.</p>
           </div>
-          <div className="glass-card p-6 text-center border-t-4 border-t-[var(--color-accent-indigo)] bg-[var(--color-primary-dark)]">
+          <div className="glass-card p-6 text-center border-t-4 border-t-[var(--color-accent-indigo)] bg-[var(--color-card-surface)]">
             <div className="text-sm font-bold text-[var(--color-accent-indigo)] mb-2 uppercase tracking-wider">Step 2</div>
             <h3 className="font-bold mb-2">Share the link or QR code</h3>
             <p className="text-sm text-[var(--color-muted-text)]">The seller sends the payment request to a buyer, client, or customer using a link or QR code.</p>
           </div>
-          <div className="glass-card p-6 text-center border-t-4 border-t-[var(--color-accent-magenta)] bg-[var(--color-primary-dark)]">
+          <div className="glass-card p-6 text-center border-t-4 border-t-[var(--color-accent-magenta)] bg-[var(--color-card-surface)]">
             <div className="text-sm font-bold text-[var(--color-accent-magenta)] mb-2 uppercase tracking-wider">Step 3</div>
             <h3 className="font-bold mb-2">Buyer pays from a compatible wallet</h3>
             <p className="text-sm text-[var(--color-muted-text)]">The buyer reviews the request and completes the payment using a compatible Solana wallet.</p>
           </div>
-          <div className="glass-card p-6 text-center border-t-4 border-t-[var(--color-accent-cyan)] bg-[var(--color-primary-dark)]">
+          <div className="glass-card p-6 text-center border-t-4 border-t-[var(--color-accent-cyan)] bg-[var(--color-card-surface)]">
             <div className="text-sm font-bold text-[var(--color-accent-cyan)] mb-2 uppercase tracking-wider">Step 4</div>
             <h3 className="font-bold mb-2">Payment is verified</h3>
             <p className="text-sm text-[var(--color-muted-text)]">GoPaySol checks the payment status using on-chain information and updates the payment record.</p>
           </div>
-          <div className="glass-card p-6 text-center border-t-4 border-t-[var(--color-accent-indigo)] bg-[var(--color-primary-dark)]">
+          <div className="glass-card p-6 text-center border-t-4 border-t-[var(--color-accent-indigo)] bg-[var(--color-card-surface)]">
             <div className="text-sm font-bold text-[var(--color-accent-indigo)] mb-2 uppercase tracking-wider">Step 5</div>
             <h3 className="font-bold mb-2">Record is available</h3>
             <p className="text-sm text-[var(--color-muted-text)]">The seller gets a clearer record of the request and payment status, reducing manual confusion.</p>
@@ -108,7 +108,7 @@ export const GoPaySol = () => {
         </div>
       </section>
 
-      <section className="py-24 px-4 sm:px-6 lg:px-8 bg-[var(--color-secondary-dark)] border-t border-[var(--color-border)]">
+      <section className="py-24 px-4 sm:px-6 lg:px-8 bg-[var(--color-secondary-bg)] border-t border-[var(--color-border-main)]">
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16">
           <div>
             <SectionHeading title="Who GoPaySol Is For" />
@@ -145,28 +145,28 @@ export const GoPaySol = () => {
         </div>
       </section>
 
-      <section className="py-24 px-4 sm:px-6 lg:px-8 bg-[var(--color-secondary-dark)] border-t border-[var(--color-border)]">
+      <section className="py-24 px-4 sm:px-6 lg:px-8 bg-[var(--color-secondary-bg)] border-t border-[var(--color-border-main)]">
         <div className="max-w-7xl mx-auto">
           <SectionHeading title="What GoPaySol Is Not" />
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-8">
             <div className="glass-card p-6 border-t-4 border-[var(--color-accent-indigo)] bg-[var(--color-accent-indigo)]/5">
-              <h3 className="font-semibold text-[var(--color-text-white)] mb-2">Not a bank</h3>
+              <h3 className="font-semibold text-[var(--color-primary-text)] mb-2">Not a bank</h3>
               <p className="text-sm text-[var(--color-muted-text)]">GoPaySol is not a bank or regulated financial institution.</p>
             </div>
             <div className="glass-card p-6 border-t-4 border-[var(--color-accent-indigo)] bg-[var(--color-accent-indigo)]/5">
-              <h3 className="font-semibold text-[var(--color-text-white)] mb-2">Not a custody service</h3>
+              <h3 className="font-semibold text-[var(--color-primary-text)] mb-2">Not a custody service</h3>
               <p className="text-sm text-[var(--color-muted-text)]">GoPaySol does not hold user funds.</p>
             </div>
             <div className="glass-card p-6 border-t-4 border-[var(--color-accent-indigo)] bg-[var(--color-accent-indigo)]/5">
-              <h3 className="font-semibold text-[var(--color-text-white)] mb-2">Not a wallet recovery service</h3>
+              <h3 className="font-semibold text-[var(--color-primary-text)] mb-2">Not a wallet recovery service</h3>
               <p className="text-sm text-[var(--color-muted-text)]">GoPaySol will never ask for seed phrases or private keys.</p>
             </div>
             <div className="glass-card p-6 border-t-4 border-[var(--color-accent-indigo)] bg-[var(--color-accent-indigo)]/5">
-              <h3 className="font-semibold text-[var(--color-text-white)] mb-2">Not a guarantee of payment disputes</h3>
+              <h3 className="font-semibold text-[var(--color-primary-text)] mb-2">Not a guarantee of payment disputes</h3>
               <p className="text-sm text-[var(--color-muted-text)]">On-chain transactions may be irreversible. Users are responsible for verifying payment details.</p>
             </div>
             <div className="glass-card p-6 border-t-4 border-[var(--color-accent-indigo)] bg-[var(--color-accent-indigo)]/5">
-              <h3 className="font-semibold text-[var(--color-text-white)] mb-2">Not tax or legal software</h3>
+              <h3 className="font-semibold text-[var(--color-primary-text)] mb-2">Not tax or legal software</h3>
               <p className="text-sm text-[var(--color-muted-text)]">Receipts and records are for operational clarity and may not replace professional accounting or legal advice.</p>
             </div>
           </div>

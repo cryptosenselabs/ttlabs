@@ -20,7 +20,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
   rightContent
 }) => {
   return (
-    <section className={`relative flex items-center justify-center px-4 sm:px-6 lg:px-8 overflow-hidden border-b border-[var(--color-border-main)] ${
+    <section className={`relative flex items-center justify-center px-4 sm:px-6 lg:px-8 overflow-hidden bg-[var(--color-navy-bg)] border-b border-white/10 ${
       isMainPage ? 'py-16 md:py-24 min-h-[40vh]' : 'py-24 md:py-32 min-h-[50vh]'
     }`}>
       {/* Animated subtle background glow */}
@@ -45,7 +45,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
-            className={`font-bold tracking-tight mb-6 text-[var(--color-primary-text)] ${isMainPage ? 'text-4xl md:text-5xl lg:text-6xl leading-tight' : 'text-4xl md:text-5xl'}`}
+            className={`font-bold tracking-tight mb-6 text-white ${isMainPage ? 'text-4xl md:text-5xl lg:text-6xl leading-tight' : 'text-4xl md:text-5xl'}`}
           >
             {title}
           </motion.h1>
@@ -54,7 +54,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.15, ease: [0.16, 1, 0.3, 1] }}
-            className={`text-xl text-[var(--color-secondary-text)] mb-10 leading-relaxed ${rightContent ? 'max-w-xl' : 'max-w-2xl mx-auto'}`}
+            className={`text-xl text-slate-300 mb-10 leading-relaxed ${rightContent ? 'max-w-xl' : 'max-w-2xl mx-auto'}`}
           >
             {subtitle}
           </motion.p>
@@ -82,11 +82,11 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
               {secondaryAction && (
                 <motion.div whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.98 }}>
                   {secondaryAction.to.startsWith('http') ? (
-                    <a href={secondaryAction.to} target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center px-8 py-3.5 rounded-xl bg-[var(--color-card-surface)] border border-[var(--color-border-main)] text-[var(--color-primary-text)] font-medium hover:bg-[var(--color-section-surface)] hover:shadow-lg transition-all duration-300 hover:-translate-y-0.5 w-full sm:w-auto">
+                    <a href={secondaryAction.to} target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center px-8 py-3.5 rounded-xl bg-white/5 border border-white/10 text-white font-medium hover:bg-white/10 hover:shadow-lg transition-all duration-300 hover:-translate-y-0.5 w-full sm:w-auto">
                       {secondaryAction.text}
                     </a>
                   ) : (
-                    <Link to={secondaryAction.to} className="inline-flex items-center justify-center px-8 py-3.5 rounded-xl bg-[var(--color-card-surface)] border border-[var(--color-border-main)] text-[var(--color-primary-text)] font-medium hover:bg-[var(--color-section-surface)] hover:shadow-lg transition-all duration-300 hover:-translate-y-0.5 w-full sm:w-auto">
+                    <Link to={secondaryAction.to} className="inline-flex items-center justify-center px-8 py-3.5 rounded-xl bg-white/5 border border-white/10 text-white font-medium hover:bg-white/10 hover:shadow-lg transition-all duration-300 hover:-translate-y-0.5 w-full sm:w-auto">
                       {secondaryAction.text}
                     </Link>
                   )}

@@ -13,23 +13,31 @@ export const Footer = () => {
               <span>Third Leap Labs</span>
             </Link>
             <p className="text-[var(--color-secondary-text)] text-sm mb-6 leading-relaxed pr-4">
-              Building SaaS platforms, automation systems, blockchain-enabled tools, and scalable digital products.
+              Software solutions around blockchain, payments, SaaS, and automation. U.S. LLC.
             </p>
           </div>
           
           <div>
-            <h3 className="text-[var(--color-primary-text)] font-semibold mb-4 tracking-wider text-xs uppercase">Products</h3>
+            <h3 className="text-[var(--color-primary-text)] font-semibold mb-4 tracking-wider text-xs uppercase">Solutions</h3>
             <ul className="space-y-3 text-sm">
-              <li><Link to="/products/whalescanner" className="text-[var(--color-secondary-text)] hover:text-[var(--color-primary-text)] transition-colors">WhaleScanner</Link></li>
-              <li><Link to="/products/gopaysol" className="text-[var(--color-secondary-text)] hover:text-[var(--color-primary-text)] transition-colors">GoPaySol</Link></li>
+              <li><Link to="/solutions#blockchain" className="text-[var(--color-secondary-text)] hover:text-[var(--color-primary-text)] transition-colors">Blockchain Solutions</Link></li>
+              <li><Link to="/solutions#payments" className="text-[var(--color-secondary-text)] hover:text-[var(--color-primary-text)] transition-colors">Payment Systems</Link></li>
+              <li><Link to="/solutions#saas" className="text-[var(--color-secondary-text)] hover:text-[var(--color-primary-text)] transition-colors">SaaS & Automation</Link></li>
+            </ul>
+          </div>
+          
+          <div>
+            <h3 className="text-[var(--color-primary-text)] font-semibold mb-4 tracking-wider text-xs uppercase">Labs</h3>
+            <ul className="space-y-3 text-sm">
+              <li><Link to="/labs/whalescanner" className="text-[var(--color-secondary-text)] hover:text-[var(--color-primary-text)] transition-colors">WhaleScanner</Link></li>
+              <li><Link to="/labs/gopaysol" className="text-[var(--color-secondary-text)] hover:text-[var(--color-primary-text)] transition-colors">GoPaySol</Link></li>
             </ul>
           </div>
           
           <div>
             <h3 className="text-[var(--color-primary-text)] font-semibold mb-4 tracking-wider text-xs uppercase">Company</h3>
             <ul className="space-y-3 text-sm">
-              <li><Link to="/about" className="text-[var(--color-secondary-text)] hover:text-[var(--color-primary-text)] transition-colors">About Us</Link></li>
-              <li><Link to="/services" className="text-[var(--color-secondary-text)] hover:text-[var(--color-primary-text)] transition-colors">Services</Link></li>
+              <li><Link to="/company" className="text-[var(--color-secondary-text)] hover:text-[var(--color-primary-text)] transition-colors">About Us</Link></li>
               <li><Link to="/labs" className="text-[var(--color-secondary-text)] hover:text-[var(--color-primary-text)] transition-colors">Labs</Link></li>
               <li><Link to="/roadmap" className="text-[var(--color-secondary-text)] hover:text-[var(--color-primary-text)] transition-colors">Roadmap</Link></li>
               <li><Link to="/contact" className="text-[var(--color-secondary-text)] hover:text-[var(--color-primary-text)] transition-colors">Contact</Link></li>
