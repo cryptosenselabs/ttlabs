@@ -20,7 +20,7 @@ export const Contact = () => {
         theme="light"
       />
 
-      <div className="max-w-[1120px] mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24">
+      <div className="max-w-[1120px] mx-auto px-4 sm:px-6 lg:px-8 pt-[72px] pb-[72px]">
         
         <div className="flex flex-col lg:flex-row gap-16 items-start">
           

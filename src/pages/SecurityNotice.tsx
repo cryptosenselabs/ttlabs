@@ -18,7 +18,7 @@ export const SecurityNotice = () => {
         theme="light"
       />
 
-      <div className="max-w-[800px] mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-20">
+      <div className="max-w-[800px] mx-auto px-4 sm:px-6 lg:px-8 pt-[72px] pb-[72px]">
         <div className="bg-white p-8 md:p-12 rounded-2xl border border-[#E2E8F0] shadow-sm max-w-none space-y-12">
           <div>
             <h2 className="text-[24px] font-bold text-[#0F172A] mb-4">Important Security Rules</h2>

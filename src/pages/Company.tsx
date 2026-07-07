@@ -23,7 +23,7 @@ export const Company = () => {
       />
 
       {/* The Next Digital Leap (Split Section) */}
-      <section className="py-24 px-4 sm:px-6 lg:px-8 max-w-[1120px] mx-auto">
+      <section className="pt-[72px] pb-[72px] px-4 sm:px-6 lg:px-8 max-w-[1120px] mx-auto">
         <div className="flex flex-col lg:flex-row gap-16 items-start">
           <div className="lg:w-1/2">
             <h2 className="text-[36px] font-bold text-[#0F172A] mb-6">The Next Digital Leap</h2>
@@ -47,7 +47,7 @@ export const Company = () => {
       </section>
 
       {/* What We Believe */}
-      <section className="py-24 px-4 sm:px-6 lg:px-8 bg-[#F1F5F9] border-y border-[#E2E8F0]">
+      <section className="pt-[72px] pb-[72px] px-4 sm:px-6 lg:px-8 bg-[#F1F5F9] border-y border-[#E2E8F0]">
         <div className="max-w-[1120px] mx-auto">
           <SectionHeading 
             title="What We Believe" 
@@ -95,7 +95,7 @@ export const Company = () => {
       </section>
 
       {/* Focus Areas */}
-      <section className="py-24 px-4 sm:px-6 lg:px-8 max-w-[1120px] mx-auto">
+      <section className="pt-[72px] pb-[72px] px-4 sm:px-6 lg:px-8 max-w-[1120px] mx-auto">
         <SectionHeading 
           title="Focus Areas" 
           subtitle="Where we apply our engineering efforts."

@@ -18,20 +18,23 @@ export const Home = () => {
       />
       
       {/* 1. Hero Section (Light-First with Navy Right Card) */}
-      <div className="pt-32 pb-16 md:pt-40 md:pb-24 overflow-hidden relative bg-[#F8FAFC]">
+      <div className="pt-[96px] pb-[88px] overflow-hidden relative bg-[#F8FAFC]">
         <div className="max-w-[1120px] mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          <div className="flex flex-col lg:flex-row gap-12 lg:gap-8 items-center justify-between">
+          <div className="flex flex-col lg:flex-row gap-16 items-center justify-between">
             
-            <div className="flex-1 max-w-2xl">
-              <p className="text-[14px] font-bold uppercase tracking-wider text-blue-600 mb-4">
+            <div className="w-full lg:w-[50%]">
+              <p className="eyebrow mb-4">
                 Blockchain-aware software engineering
               </p>
               <h1 className="hero-title font-bold text-[#0F172A] mb-6">
                 Software Solutions <br />
                 for the <span className="text-blue-600">Next Digital Leap</span>
               </h1>
-              <p className="text-[18px] text-[#475569] leading-relaxed mb-8 max-w-xl">
+              <p className="text-[18px] text-[#475569] leading-relaxed mb-8">
                 Third Leap Labs LLC designs and builds blockchain-enabled platforms, payment workflows, SaaS systems, automation tools, and Web3 utilities for modern digital ecosystems.
+              </p>
+              <p className="text-[16px] text-[#475569] leading-relaxed mb-8">
+                We help ideas move from concept to working software through product thinking, architecture, blockchain engineering, and practical implementation.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link to="/solutions" className="inline-flex items-center justify-center px-6 py-3.5 rounded-lg bg-blue-600 text-white font-semibold hover:bg-blue-700 transition-colors shadow-sm">
@@ -43,12 +46,11 @@ export const Home = () => {
               </div>
             </div>
 
-            <div className="w-full lg:w-[440px] shrink-0">
-              <div className="bg-[#0B1220] rounded-2xl p-8 shadow-2xl relative overflow-hidden">
-                {/* Decorative glow inside navy card */}
+            <div className="w-full lg:w-[42%] shrink-0">
+              <div className="bg-[#0B1220] rounded-2xl p-8 shadow-[0_20px_50px_rgba(11,18,32,0.15)] relative overflow-hidden border border-slate-800">
                 <div className="absolute top-0 right-0 w-64 h-64 bg-blue-500 rounded-full blur-[80px] opacity-20 pointer-events-none translate-x-1/2 -translate-y-1/2" />
                 
-                <h3 className="text-white font-bold text-[18px] mb-6 relative z-10">System Architecture</h3>
+                <h3 className="text-white/90 font-semibold text-[16px] mb-6 relative z-10 tracking-wide">System Architecture</h3>
                 <div className="relative z-10">
                   <ArchitectureStackVisual />
                 </div>

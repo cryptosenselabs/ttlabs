@@ -1,11 +1,31 @@
 import React from 'react';
 import { ModernPageHeader } from '../components/ui/ModernPageHeader';
-import { LabsVisual } from '../components/ui/LabsVisual';
 import { ProductCard } from '../components/ui/ProductCard';
 import { CTASection } from '../components/ui/CTASection';
 import { SEO } from '../components/layout/SEO';
 import { Layout } from '../components/layout/Layout';
 import { Database, Zap, Sparkles } from 'lucide-react';
+
+const LabsPreviewCards = () => (
+  <div className="flex flex-col gap-4 w-full max-w-[380px]">
+    <div className="bg-white border border-[#E2E8F0] p-5 rounded-xl shadow-sm">
+      <div className="flex items-center gap-2 mb-2">
+        <Database className="w-5 h-5 text-cyan-600" />
+        <h3 className="font-bold text-[#0F172A] text-[16px]">WhaleScanner</h3>
+      </div>
+      <p className="text-[13px] font-semibold text-[#475569] uppercase tracking-wider mb-2">Wallet intelligence initiative</p>
+      <p className="text-[14px] text-[#475569] leading-relaxed">Wallet activity visibility, whale movement monitoring, suspicious pattern awareness.</p>
+    </div>
+    <div className="bg-white border border-[#E2E8F0] p-5 rounded-xl shadow-sm">
+      <div className="flex items-center gap-2 mb-2">
+        <Zap className="w-5 h-5 text-indigo-600" />
+        <h3 className="font-bold text-[#0F172A] text-[16px]">GoPaySol</h3>
+      </div>
+      <p className="text-[13px] font-semibold text-[#475569] uppercase tracking-wider mb-2">Payment workflow initiative</p>
+      <p className="text-[14px] text-[#475569] leading-relaxed">Solana payment links, QR payment requests, receipt records, and payment verification flows.</p>
+    </div>
+  </div>
+);
 
 export const Labs = () => {
   return (
@@ -19,11 +39,11 @@ export const Labs = () => {
         eyebrow="Labs"
         title="Internal Initiatives"
         subtitle="Exploring specific use cases in blockchain intelligence, payment workflows, and software automation to test new product architectures."
-        rightVisual={<LabsVisual />}
+        rightVisual={<LabsPreviewCards />}
         theme="light"
       />
 
-      <div className="max-w-[1120px] mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24 space-y-24">
+      <div className="max-w-[1120px] mx-auto px-4 sm:px-6 lg:px-8 pt-[72px] pb-[72px] space-y-16">
         
         {/* Intro Section */}
         <section className="max-w-3xl">
@@ -41,7 +61,6 @@ export const Labs = () => {
 
         {/* Internal Labs and Initiatives */}
         <section>
-          <h2 className="text-[28px] font-bold text-[#0F172A] mb-8">Active Initiatives</h2>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
             <ProductCard 
               title="WhaleScanner"
@@ -55,7 +74,7 @@ export const Labs = () => {
               ]}
               icon={Database}
               to="/labs/whalescanner"
-              buttonText="View WhaleScanner"
+              buttonText="View initiative"
               accentColorClass="text-cyan-600"
               isFeatured={true}
             />
@@ -71,7 +90,7 @@ export const Labs = () => {
               ]}
               icon={Zap}
               to="/labs/gopaysol"
-              buttonText="View GoPaySol"
+              buttonText="View initiative"
               accentColorClass="text-indigo-600"
               isFeatured={true}
             />

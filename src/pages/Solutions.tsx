@@ -24,7 +24,7 @@ export const Solutions = () => {
         theme="light"
       />
 
-      <section className="py-24 px-4 sm:px-6 lg:px-8 max-w-[1120px] mx-auto">
+      <section className="pt-[72px] pb-[72px] px-4 sm:px-6 lg:px-8 max-w-[1120px] mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           <FeatureCard 
             title="Blockchain Platforms" 
@@ -52,8 +52,8 @@ export const Solutions = () => {
             icon={<Globe className="w-6 h-6 text-indigo-600" />} 
           />
           <FeatureCard 
-            title="Data & Operational Views" 
-            description="We build systems that organize complex information into clearer dashboards, summaries, alerts, and operational views." 
+            title="Technical Architecture and Delivery" 
+            description="We help teams design system data models, API connections, and integration boundaries before building reliable production software." 
             icon={<Activity className="w-6 h-6 text-blue-600" />} 
           />
         </div>
