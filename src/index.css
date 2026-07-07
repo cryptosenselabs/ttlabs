@@ -1,0 +1,67 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary-dark: #020617;
+  --color-secondary-dark: #0F172A;
+  --color-card-surface: #111827;
+  --color-text-white: #F8FAFC;
+  --color-main-dark-text: #020617;
+  --color-muted-text: #64748B;
+  --color-muted-dark-text: #94A3B8;
+  --color-border: #1E293B;
+  --color-accent-cyan: #00D5FF;
+  --color-accent-magenta: #FF00C8;
+  --color-accent-indigo: #5B4BFF;
+  --color-light-bg: #F8FAFC;
+}
+
+@layer base {
+  body {
+    background-color: var(--color-primary-dark);
+    color: var(--color-text-white);
+    font-family: 'Inter', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  /* Basic scrollbar styling for premium feel */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+  ::-webkit-scrollbar-track {
+    background-color: var(--color-primary-dark);
+  }
+  ::-webkit-scrollbar-thumb {
+    background-color: var(--color-border);
+    border-radius: 9999px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: var(--color-secondary-dark);
+  }
+}
+
+@layer utilities {
+  .glass-card {
+    background-color: color-mix(in srgb, var(--color-card-surface) 50%, transparent);
+    backdrop-filter: blur(12px);
+    border: 1px solid color-mix(in srgb, var(--color-border) 50%, transparent);
+    border-radius: 0.75rem;
+  }
+  
+  .text-gradient {
+    background-image: linear-gradient(to right, var(--color-accent-cyan), var(--color-accent-indigo));
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+  
+  .text-gradient-alt {
+    background-image: linear-gradient(to right, var(--color-accent-magenta), var(--color-accent-indigo));
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+
+  .premium-gradient-bg {
+    background: radial-gradient(circle at top right, color-mix(in srgb, var(--color-accent-indigo) 15%, transparent), transparent 40%),
+                radial-gradient(circle at bottom left, color-mix(in srgb, var(--color-accent-cyan) 10%, transparent), transparent 40%);
+  }
+}
