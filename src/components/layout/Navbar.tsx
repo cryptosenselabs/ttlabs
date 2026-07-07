@@ -19,7 +19,7 @@ export const Navbar = () => {
         <div className="flex justify-between items-center h-16">
           <div className="flex-shrink-0 flex items-center">
             <Link to="/" className="text-xl font-bold tracking-tight text-slate-900 flex items-center gap-2 group">
-              <img src="/logo.svg" alt="Third Leap Labs Logo" className="h-6 w-auto" style={{ filter: 'brightness(0) drop-shadow(0px 2px 4px rgba(0,0,0,0.1))' }} />
+              <img src="/logo.png" alt="Third Leap Labs Logo" className="h-6 w-auto" style={{ filter: 'drop-shadow(0px 2px 4px rgba(0,0,0,0.1))' }} />
               <span>Third Leap Labs</span>
             </Link>
           </div>
