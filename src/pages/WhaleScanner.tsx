@@ -1,5 +1,5 @@
 import React from 'react';
-import { HeroSection } from '../components/ui/HeroSection';
+import { ModernPageHeader } from '../components/ui/ModernPageHeader';
 import { SectionHeading } from '../components/ui/SectionHeading';
 import { FeatureCard } from '../components/ui/FeatureCard';
 import { TrustNotice } from '../components/ui/TrustNotice';
@@ -15,44 +15,44 @@ export const WhaleScanner = () => {
         description="Web3 wallet intelligence and whale activity visibility for communities, builders, analysts, and users who need better context around on-chain behavior."
       />
       
-      <HeroSection 
+      <ModernPageHeader 
+        eyebrow="Web3 Intelligence"
         title="WhaleScanner"
         subtitle="Web3 wallet intelligence and whale activity visibility for communities, builders, analysts, and users who need better context around on-chain behavior."
-        primaryAction={{ text: "Visit WhaleScanner.com", to: "https://whalescanner.com" }}
-        secondaryAction={{ text: "Discuss Product", to: "/contact" }}
+        theme="light"
       />
 
-      <section className="py-8 px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto text-center text-lg text-[var(--color-muted-text)] leading-relaxed">
+      <section className="pt-[72px] pb-[72px] px-4 sm:px-6 lg:px-8 max-w-[800px] mx-auto text-center text-[18px] text-[#475569] leading-relaxed">
         <p>
           WhaleScanner is being developed to make wallet activity easier to observe, organize, and explain. Instead of depending only on screenshots, rumors, or fragmented blockchain data, users should be able to see wallet behavior with clearer context.
         </p>
       </section>
 
-      <section className="py-8 px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto">
+      <section className="pb-[72px] px-4 sm:px-6 lg:px-8 max-w-[800px] mx-auto">
         <TrustNotice>
           <p>WhaleScanner is an informational product. It does not provide financial advice, investment recommendations, price predictions, or trading signals.</p>
         </TrustNotice>
       </section>
 
-      <section className="py-24 px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto">
+      <section className="pt-[72px] pb-[72px] px-4 sm:px-6 lg:px-8 max-w-[800px] mx-auto">
         <SectionHeading title="The Problem" subtitle="On-chain activity is public, but not always understandable" />
-        <div className="prose prose-invert max-w-none text-lg text-[var(--color-muted-text)] leading-relaxed">
+        <div className="prose max-w-none text-[16px] text-[#475569] leading-relaxed mt-8">
           <p>
             Blockchain data is visible, but visibility is not the same as understanding. A wallet movement may look important, but without context it can be hard to know whether it is routine activity, accumulation, distribution, migration, exchange movement, liquidity movement, or something suspicious.
           </p>
           <p>
             Crypto communities often rely on incomplete information. Screenshots move faster than facts. Influencer claims are difficult to verify. Wallets may appear important without a clear history. Project teams may need to explain wallet behavior repeatedly. Users may see large transactions but have no simple way to understand the broader pattern.
           </p>
-          <p className="font-semibold text-[var(--color-primary-text)]">
+          <p className="font-semibold text-[#0F172A] mt-6">
             WhaleScanner is designed to reduce that confusion.
           </p>
         </div>
       </section>
 
-      <section className="py-24 px-4 sm:px-6 lg:px-8 bg-[var(--color-secondary-bg)] border-y border-[var(--color-border-main)]">
-        <div className="max-w-7xl mx-auto">
+      <section className="pt-[72px] pb-[72px] px-4 sm:px-6 lg:px-8 bg-[#F1F5F9] border-y border-[#E2E8F0]">
+        <div className="max-w-[1120px] mx-auto">
           <SectionHeading title="What WhaleScanner Is" subtitle="A context layer for wallet activity" />
-          <div className="prose prose-invert max-w-none text-lg text-[var(--color-muted-text)] leading-relaxed mb-16">
+          <div className="prose max-w-none text-[16px] text-[#475569] leading-relaxed mb-16 mt-8 max-w-[800px]">
             <p>
               WhaleScanner is a Web3 intelligence product focused on wallet activity visibility, whale movement monitoring, token activity tracking, suspicious pattern awareness, and AI-assisted wallet behavior summaries.
             </p>
@@ -61,8 +61,8 @@ export const WhaleScanner = () => {
             </p>
           </div>
 
-          <SectionHeading title="Core Capabilities" />
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-12">
+          <h3 className="text-[24px] font-bold text-[#0F172A] mb-8">Core Capabilities</h3>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             <FeatureCard title="Wallet Activity Timeline" description="A structured view of wallet transactions over time, helping users understand whether a wallet is active, dormant, accumulating, distributing, rotating assets, or interacting with specific tokens." />
             <FeatureCard title="Whale Movement Visibility" description="Large wallet movements can influence community discussions. WhaleScanner helps surface significant movements so they can be reviewed with context instead of speculation." />
             <FeatureCard title="Token Activity Monitoring" description="Track wallet interactions around selected tokens, including buys, sells, transfers, liquidity-related activity, and other visible on-chain movements." />
@@ -75,10 +75,10 @@ export const WhaleScanner = () => {
         </div>
       </section>
 
-      <section className="py-24 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16">
+      <section className="pt-[72px] pb-[72px] px-4 sm:px-6 lg:px-8 max-w-[1120px] mx-auto grid grid-cols-1 md:grid-cols-2 gap-16">
         <div>
-          <SectionHeading title="Who WhaleScanner Is For" />
-          <div className="grid grid-cols-1 gap-4 mt-8">
+          <h3 className="text-[24px] font-bold text-[#0F172A] mb-8">Who WhaleScanner Is For</h3>
+          <div className="grid grid-cols-1 gap-4">
             <FeatureCard title="Crypto Communities" description="For communities that want clearer discussion around wallet movement, large holders, and token activity." />
             <FeatureCard title="Project Teams" description="For teams that need better visibility into ecosystem activity and community-facing wallet questions." />
             <FeatureCard title="Web3 Builders" description="For builders who want to understand user, holder, or whale behavior around their ecosystem." />
@@ -87,8 +87,8 @@ export const WhaleScanner = () => {
           </div>
         </div>
         <div>
-          <SectionHeading title="Example Use Cases" />
-          <div className="grid grid-cols-1 gap-4 mt-8">
+          <h3 className="text-[24px] font-bold text-[#0F172A] mb-8">Example Use Cases</h3>
+          <div className="grid grid-cols-1 gap-4">
             <FeatureCard title="Understanding a Large Holder" description="A community notices that a large wallet moved tokens. WhaleScanner can help show whether the wallet has a history of similar movements, whether the movement was sudden, and what other activity happened around the same time." />
             <FeatureCard title="Reviewing Suspicious Activity" description="A project team sees repeated wallet interactions that look unusual. WhaleScanner can help organize the activity into a clearer timeline for review." />
             <FeatureCard title="Preparing a Community Update" description="Instead of replying to rumors with disconnected screenshots, a team or community moderator can refer to clearer wallet behavior context." />
@@ -98,10 +98,10 @@ export const WhaleScanner = () => {
         </div>
       </section>
 
-      <section className="py-24 px-4 sm:px-6 lg:px-8 bg-[var(--color-secondary-bg)] border-y border-[var(--color-border-main)]">
-        <div className="max-w-7xl mx-auto">
+      <section className="pt-[72px] pb-[72px] px-4 sm:px-6 lg:px-8 bg-[#F1F5F9] border-y border-[#E2E8F0]">
+        <div className="max-w-[1120px] mx-auto">
           <SectionHeading title="Product Direction" subtitle="Where WhaleScanner is going" />
-          <div className="prose prose-invert max-w-none text-[var(--color-muted-text)] leading-relaxed text-lg mb-12">
+          <div className="prose max-w-none text-[#475569] leading-relaxed text-[16px] mb-12 mt-8 max-w-[800px]">
             <p>
               WhaleScanner is planned as more than a simple wallet watcher. The product direction includes a wider intelligence layer around wallets, communities, builders, and on-chain activity.
             </p>
@@ -116,33 +116,33 @@ export const WhaleScanner = () => {
         </div>
       </section>
 
-      <section className="py-24 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+      <section className="pt-[72px] pb-[72px] px-4 sm:px-6 lg:px-8 max-w-[1120px] mx-auto">
         <SectionHeading title="What WhaleScanner Is Not" />
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-8">
-          <div className="glass-card p-6 border-t-4 border-red-500 bg-red-500/5">
-            <h3 className="font-semibold text-[var(--color-primary-text)] mb-2">Not a trading signal platform</h3>
-            <p className="text-sm text-[var(--color-muted-text)]">WhaleScanner does not tell users when to buy, sell, or hold any asset.</p>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-12">
+          <div className="modern-card p-6 border-t-4 border-red-500 bg-white">
+            <h3 className="font-semibold text-[#0F172A] mb-2">Not a trading signal platform</h3>
+            <p className="text-[14px] text-[#475569]">WhaleScanner does not tell users when to buy, sell, or hold any asset.</p>
           </div>
-          <div className="glass-card p-6 border-t-4 border-red-500 bg-red-500/5">
-            <h3 className="font-semibold text-[var(--color-primary-text)] mb-2">Not a financial advisor</h3>
-            <p className="text-sm text-[var(--color-muted-text)]">The product provides information and context only. Users are responsible for their own decisions.</p>
+          <div className="modern-card p-6 border-t-4 border-red-500 bg-white">
+            <h3 className="font-semibold text-[#0F172A] mb-2">Not a financial advisor</h3>
+            <p className="text-[14px] text-[#475569]">The product provides information and context only. Users are responsible for their own decisions.</p>
           </div>
-          <div className="glass-card p-6 border-t-4 border-red-500 bg-red-500/5">
-            <h3 className="font-semibold text-[var(--color-primary-text)] mb-2">Not a price prediction tool</h3>
-            <p className="text-sm text-[var(--color-muted-text)]">Wallet activity may be useful context, but it does not guarantee market direction.</p>
+          <div className="modern-card p-6 border-t-4 border-red-500 bg-white">
+            <h3 className="font-semibold text-[#0F172A] mb-2">Not a price prediction tool</h3>
+            <p className="text-[14px] text-[#475569]">Wallet activity may be useful context, but it does not guarantee market direction.</p>
           </div>
-          <div className="glass-card p-6 border-t-4 border-red-500 bg-red-500/5">
-            <h3 className="font-semibold text-[var(--color-primary-text)] mb-2">Not a custody service</h3>
-            <p className="text-sm text-[var(--color-muted-text)]">WhaleScanner does not hold user funds and does not need private keys or seed phrases.</p>
+          <div className="modern-card p-6 border-t-4 border-red-500 bg-white">
+            <h3 className="font-semibold text-[#0F172A] mb-2">Not a custody service</h3>
+            <p className="text-[14px] text-[#475569]">WhaleScanner does not hold user funds and does not need private keys or seed phrases.</p>
           </div>
-          <div className="glass-card p-6 border-t-4 border-red-500 bg-red-500/5">
-            <h3 className="font-semibold text-[var(--color-primary-text)] mb-2">Not a replacement for research</h3>
-            <p className="text-sm text-[var(--color-muted-text)]">On-chain visibility is only one part of responsible research.</p>
+          <div className="modern-card p-6 border-t-4 border-red-500 bg-white">
+            <h3 className="font-semibold text-[#0F172A] mb-2">Not a replacement for research</h3>
+            <p className="text-[14px] text-[#475569]">On-chain visibility is only one part of responsible research.</p>
           </div>
         </div>
       </section>
 
-      <section className="py-16 px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto">
+      <section className="pb-[72px] px-4 sm:px-6 lg:px-8 max-w-[800px] mx-auto">
         <TrustNotice title="Safety Language: Built with clear boundaries">
           <p>
             WhaleScanner is designed to improve visibility, not to encourage reckless decisions. Web3 tools must be careful with language because users can mistake information for advice. For that reason, WhaleScanner should always communicate clearly that its outputs are informational, incomplete by nature, and should be interpreted with caution.

@@ -24,7 +24,7 @@ export const Navbar = () => {
         <div className="flex justify-between items-center h-[72px]">
           <div className="flex-shrink-0 flex items-center">
             <Link to="/" className="text-[20px] font-bold tracking-tight text-[#0F172A] flex items-center gap-2 group">
-              <img src="/logo.svg" alt="Third Leap Labs Logo" className="h-7 w-auto transition-transform group-hover:scale-105 duration-300" />
+              <img src="/logo.svg" alt="Third Leap Labs Logo" className="h-10 w-auto transition-transform group-hover:scale-105 duration-300" />
               <span>Third Leap Labs</span>
             </Link>
           </div>
