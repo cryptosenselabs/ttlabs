@@ -3,8 +3,10 @@ import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 
 interface HeroSectionProps {
+  eyebrow?: string;
   title: React.ReactNode;
   subtitle: string;
+  supportingLine?: string;
   primaryAction?: { text: string; to: string };
   secondaryAction?: { text: string; to: string };
   isMainPage?: boolean;
@@ -12,20 +14,24 @@ interface HeroSectionProps {
 }
 
 export const HeroSection: React.FC<HeroSectionProps> = ({ 
+  eyebrow,
   title, 
   subtitle, 
+  supportingLine,
   primaryAction, 
   secondaryAction,
   isMainPage = false,
   rightContent
 }) => {
   return (
-    <section className={`relative flex items-center justify-center px-4 sm:px-6 lg:px-8 overflow-hidden bg-[var(--color-navy-bg)] border-b border-white/10 ${
-      isMainPage ? 'py-16 md:py-24 min-h-[40vh]' : 'py-24 md:py-32 min-h-[50vh]'
+    <section className={`relative flex items-center justify-center px-4 sm:px-6 lg:px-8 overflow-hidden bg-[#0B1220] border-b border-white/5 ${
+      isMainPage ? 'py-12 md:py-20' : 'py-20 md:py-28 min-h-[40vh]'
     }`}>
-      {/* Base Dark Gradient & CSS Grid Pattern */}
-      <div className="absolute inset-0 bg-gradient-to-b from-[var(--color-navy-bg)] to-[#060B14]" />
-      <div className="absolute inset-0 bg-[linear-gradient(to_right,#ffffff08_1px,transparent_1px),linear-gradient(to_bottom,#ffffff08_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)] pointer-events-none" />
+      {/* Base Dark Gradient & Subtle Grid Pattern */}
+      <div className="absolute inset-0 bg-[linear-gradient(to_right,#ffffff03_1px,transparent_1px),linear-gradient(to_bottom,#ffffff03_1px,transparent_1px)] bg-[size:3rem_3rem] pointer-events-none" />
+
+      {/* Very subtle blue radial glow behind right visual */}
+      <div className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-1/4 w-[600px] h-[600px] bg-blue-500/10 blur-[120px] rounded-full pointer-events-none" />
 
       {/* Animated subtle background glows */}
       <motion.div 
@@ -56,24 +62,47 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
       <div className={`relative z-10 w-full ${rightContent ? 'max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center' : 'max-w-4xl mx-auto text-center'}`}>
         
         {/* Left Side (Text & Actions) */}
-        <div className={rightContent ? 'text-left' : ''}>
+        <div className={`flex flex-col ${rightContent ? 'items-start text-left' : 'items-center text-center'}`}>
+          
+          {eyebrow && (
+            <motion.div
+              initial={{ opacity: 0, y: 10 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
+              className="mb-4 text-sm font-semibold tracking-wide text-blue-400 uppercase"
+            >
+              {eyebrow}
+            </motion.div>
+          )}
+
           <motion.h1 
-            initial={{ opacity: 0, y: 30 }}
+            initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
-            className={`font-bold tracking-tight mb-6 text-white ${isMainPage ? 'text-4xl md:text-5xl lg:text-6xl leading-tight' : 'text-4xl md:text-5xl'}`}
+            transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
+            className={`font-bold tracking-tight mb-6 text-white ${isMainPage ? 'text-4xl md:text-5xl lg:text-[56px] leading-tight' : 'text-4xl md:text-5xl'}`}
           >
             {title}
           </motion.h1>
           
           <motion.p 
-            initial={{ opacity: 0, y: 20 }}
+            initial={{ opacity: 0, y: 15 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.15, ease: [0.16, 1, 0.3, 1] }}
-            className={`text-xl text-slate-300 mb-10 leading-relaxed ${rightContent ? 'max-w-xl' : 'max-w-2xl mx-auto'}`}
+            transition={{ duration: 0.7, delay: 0.1, ease: [0.16, 1, 0.3, 1] }}
+            className={`text-[17px] text-slate-300 mb-6 leading-relaxed ${rightContent ? 'max-w-xl' : 'max-w-2xl mx-auto'}`}
           >
             {subtitle}
           </motion.p>
+
+          {supportingLine && (
+            <motion.p
+              initial={{ opacity: 0, y: 15 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.7, delay: 0.15, ease: [0.16, 1, 0.3, 1] }}
+              className={`text-base text-slate-400 mb-8 leading-relaxed ${rightContent ? 'max-w-xl' : 'max-w-2xl mx-auto'}`}
+            >
+              {supportingLine}
+            </motion.p>
+          )}
           
           {(primaryAction || secondaryAction) && (
             <motion.div 
@@ -85,11 +114,11 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
               {primaryAction && (
                 <motion.div whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.98 }}>
                   {primaryAction.to.startsWith('http') ? (
-                    <a href={primaryAction.to} target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center px-8 py-3.5 rounded-xl bg-[var(--color-accent-blue)] text-white font-medium hover:opacity-90 transition-all duration-300 shadow-lg hover:shadow-xl hover:-translate-y-0.5 w-full sm:w-auto">
+                    <a href={primaryAction.to} target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center px-6 py-3 rounded-lg bg-blue-600 text-white font-medium hover:bg-blue-700 transition-colors shadow-sm w-full sm:w-auto">
                       {primaryAction.text}
                     </a>
                   ) : (
-                    <Link to={primaryAction.to} className="inline-flex items-center justify-center px-8 py-3.5 rounded-xl bg-[var(--color-accent-blue)] text-white font-medium hover:opacity-90 transition-all duration-300 shadow-lg hover:shadow-xl hover:-translate-y-0.5 w-full sm:w-auto">
+                    <Link to={primaryAction.to} className="inline-flex items-center justify-center px-6 py-3 rounded-lg bg-blue-600 text-white font-medium hover:bg-blue-700 transition-colors shadow-sm w-full sm:w-auto">
                       {primaryAction.text}
                     </Link>
                   )}
@@ -98,16 +127,30 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
               {secondaryAction && (
                 <motion.div whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.98 }}>
                   {secondaryAction.to.startsWith('http') ? (
-                    <a href={secondaryAction.to} target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center px-8 py-3.5 rounded-xl bg-white/5 border border-white/10 text-white font-medium hover:bg-white/10 hover:shadow-lg transition-all duration-300 hover:-translate-y-0.5 w-full sm:w-auto">
+                    <a href={secondaryAction.to} target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center px-6 py-3 rounded-lg bg-transparent border border-white/20 text-white font-medium hover:bg-white/5 hover:border-white/30 transition-colors w-full sm:w-auto">
                       {secondaryAction.text}
                     </a>
                   ) : (
-                    <Link to={secondaryAction.to} className="inline-flex items-center justify-center px-8 py-3.5 rounded-xl bg-white/5 border border-white/10 text-white font-medium hover:bg-white/10 hover:shadow-lg transition-all duration-300 hover:-translate-y-0.5 w-full sm:w-auto">
+                    <Link to={secondaryAction.to} className="inline-flex items-center justify-center px-6 py-3 rounded-lg bg-transparent border border-white/20 text-white font-medium hover:bg-white/5 hover:border-white/30 transition-colors w-full sm:w-auto">
                       {secondaryAction.text}
                     </Link>
                   )}
                 </motion.div>
               )}
+            </motion.div>
+          )}
+
+          {isMainPage && (
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 0.8, delay: 0.4 }}
+              className="mt-8 text-xs font-medium text-slate-500 flex gap-2"
+            >
+              <span>SaaS</span>&middot;
+              <span>Blockchain</span>&middot;
+              <span>Payments</span>&middot;
+              <span>Automation</span>
             </motion.div>
           )}
         </div>

@@ -20,8 +20,15 @@ export const Home = () => {
       {/* 1. Hero Section */}
       <HeroSection 
         isMainPage={true}
-        title={<>Software Solutions for the <span className="text-transparent bg-clip-text bg-gradient-to-r from-[var(--color-accent-cyan)] to-[var(--color-accent-indigo)]">Next Digital Leap</span></>}
+        eyebrow="Blockchain-aware software engineering"
+        title={
+          <>
+            Software Solutions <br/>
+            for the <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-cyan-400">Next Digital Leap</span>
+          </>
+        }
         subtitle="Third Leap Labs LLC designs and builds blockchain-enabled platforms, Web3 utilities, payment workflows, SaaS systems, and automation solutions for modern digital ecosystems."
+        supportingLine="We help ideas move from concept to working software through product thinking, architecture, blockchain engineering, and practical implementation."
         primaryAction={{ text: "Explore Solutions", to: "/solutions" }}
         secondaryAction={{ text: "Contact Third Leap Labs", to: "/contact" }}
         rightContent={<HeroVisual />}
@@ -29,12 +36,12 @@ export const Home = () => {
 
       {/* 2. Trust Strip (What We Build) */}
       <section className="border-b border-[var(--color-border-main)] bg-[var(--color-section-surface)]">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
-          <div className="flex flex-wrap justify-center gap-6 md:gap-16 text-[var(--color-muted-text)] font-semibold text-xs md:text-sm tracking-widest uppercase text-center">
-            <span className="flex items-center gap-2 justify-center"><Globe className="w-4 h-4 opacity-70"/> SaaS Platforms</span>
-            <span className="flex items-center gap-2 justify-center"><Database className="w-4 h-4 opacity-70"/> Blockchain Engineering</span>
-            <span className="flex items-center gap-2 justify-center"><Zap className="w-4 h-4 opacity-70"/> Payment Systems</span>
-            <span className="flex items-center gap-2 justify-center"><Code className="w-4 h-4 opacity-70"/> Automation</span>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
+          <div className="flex flex-wrap justify-center gap-6 md:gap-12 text-[var(--color-secondary-text)] font-medium text-sm text-center">
+            <span className="flex items-center gap-1.5 justify-center"><Globe className="w-3.5 h-3.5 opacity-70"/> SaaS Platforms</span>
+            <span className="flex items-center gap-1.5 justify-center"><Database className="w-3.5 h-3.5 opacity-70"/> Blockchain Engineering</span>
+            <span className="flex items-center gap-1.5 justify-center"><Zap className="w-3.5 h-3.5 opacity-70"/> Payment Systems</span>
+            <span className="flex items-center gap-1.5 justify-center"><Code className="w-3.5 h-3.5 opacity-70"/> Automation</span>
           </div>
         </div>
       </section>
