@@ -21,7 +21,7 @@ export const About = () => {
 
       <section className="py-24 px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto">
         <SectionHeading title="Company Story" />
-        <div className="prose prose-invert max-w-none text-lg text-[var(--color-muted-text)] leading-relaxed">
+        <div className="prose prose-slate max-w-none text-lg text-slate-600 leading-relaxed">
           <p>
             Third Leap Labs was created with a simple belief: meaningful software products are built through disciplined leaps. 
             The first leap is the idea. The second leap is the build. The third leap is scale, trust, and real-world usefulness.
@@ -29,7 +29,7 @@ export const About = () => {
         </div>
       </section>
 
-      <section className="py-24 px-4 sm:px-6 lg:px-8 bg-[var(--color-secondary-dark)] border-y border-[var(--color-border)]">
+      <section className="py-24 px-4 sm:px-6 lg:px-8 bg-slate-50 border-y border-slate-200">
         <div className="max-w-7xl mx-auto">
           <SectionHeading title="What We Believe" />
           
@@ -47,7 +47,7 @@ export const About = () => {
       <section className="py-24 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16">
         <div>
           <SectionHeading title="How We Work" />
-          <div className="prose prose-invert max-w-none text-[var(--color-muted-text)] leading-relaxed text-lg">
+          <div className="prose prose-slate max-w-none text-slate-600 leading-relaxed text-lg">
             <p>
               We approach product development through a combination of product discovery, architecture, implementation, validation, and iteration. 
               The goal is not to create flashy prototypes that fail under real use. The goal is to build software that can mature.
@@ -57,25 +57,25 @@ export const About = () => {
         
         <div>
           <SectionHeading title="Focus Areas" />
-          <ul className="space-y-4 text-lg text-[var(--color-text-white)]">
-            <li className="flex items-center gap-3"><div className="w-2 h-2 rounded-full bg-[var(--color-accent-cyan)]"></div> SaaS product development</li>
-            <li className="flex items-center gap-3"><div className="w-2 h-2 rounded-full bg-[var(--color-accent-magenta)]"></div> Web3 utilities</li>
-            <li className="flex items-center gap-3"><div className="w-2 h-2 rounded-full bg-[var(--color-accent-indigo)]"></div> Payment workflows</li>
-            <li className="flex items-center gap-3"><div className="w-2 h-2 rounded-full bg-[var(--color-accent-cyan)]"></div> Automation systems</li>
-            <li className="flex items-center gap-3"><div className="w-2 h-2 rounded-full bg-[var(--color-accent-magenta)]"></div> Community tools</li>
-            <li className="flex items-center gap-3"><div className="w-2 h-2 rounded-full bg-[var(--color-accent-indigo)]"></div> Data and intelligence products</li>
-            <li className="flex items-center gap-3"><div className="w-2 h-2 rounded-full bg-[var(--color-accent-cyan)]"></div> Technical consulting</li>
+          <ul className="space-y-4 text-lg text-slate-700">
+            <li className="flex items-center gap-3"><div className="w-2 h-2 rounded-full bg-slate-400"></div> SaaS product development</li>
+            <li className="flex items-center gap-3"><div className="w-2 h-2 rounded-full bg-slate-400"></div> Web3 utilities</li>
+            <li className="flex items-center gap-3"><div className="w-2 h-2 rounded-full bg-slate-400"></div> Payment workflows</li>
+            <li className="flex items-center gap-3"><div className="w-2 h-2 rounded-full bg-slate-400"></div> Automation systems</li>
+            <li className="flex items-center gap-3"><div className="w-2 h-2 rounded-full bg-slate-400"></div> Community tools</li>
+            <li className="flex items-center gap-3"><div className="w-2 h-2 rounded-full bg-slate-400"></div> Data and intelligence products</li>
+            <li className="flex items-center gap-3"><div className="w-2 h-2 rounded-full bg-slate-400"></div> Technical consulting</li>
           </ul>
         </div>
       </section>
 
-      <section className="py-24 px-4 sm:px-6 lg:px-8 bg-[var(--color-secondary-dark)] border-y border-[var(--color-border)]">
+      <section className="py-24 px-4 sm:px-6 lg:px-8 bg-slate-50 border-y border-slate-200">
         <div className="max-w-7xl mx-auto">
           <SectionHeading title="Our Location" centered />
-          <div className="max-w-4xl mx-auto text-center mb-8 text-[var(--color-muted-text)] text-lg">
+          <div className="max-w-4xl mx-auto text-center mb-8 text-slate-600 text-lg">
             <p>1209 Mountain Road PL NE STE N, Albuquerque, NM 87110 USA</p>
           </div>
-          <div className="max-w-5xl mx-auto w-full h-[400px] rounded-xl overflow-hidden border border-[var(--color-border)] shadow-xl">
+          <div className="max-w-5xl mx-auto w-full h-[400px] rounded-xl overflow-hidden border border-slate-200 shadow-sm">
             <iframe 
               width="100%" 
               height="100%" 

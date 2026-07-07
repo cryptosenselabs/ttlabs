@@ -19,7 +19,7 @@ export const Services = () => {
         subtitle="Third Leap Labs helps founders, product teams, and businesses design, build, and modernize software products with an architecture-first mindset."
       />
 
-      <section className="py-8 px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto text-center text-lg text-[var(--color-muted-text)] leading-relaxed">
+      <section className="py-8 px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto text-center text-lg text-slate-600 leading-relaxed">
         <p>
           We support product work from early idea to implementation. Our services are useful for teams that need clear technical direction, product structure, reliable engineering, and practical delivery.
         </p>
@@ -40,46 +40,46 @@ export const Services = () => {
         </div>
       </section>
 
-      <section className="py-24 px-4 sm:px-6 lg:px-8 bg-[var(--color-secondary-dark)] border-y border-[var(--color-border)]">
+      <section className="py-24 px-4 sm:px-6 lg:px-8 bg-slate-50 border-y border-slate-200">
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16">
           <div>
             <SectionHeading title="How We Work" />
             <div className="space-y-6 mt-8">
               <div className="flex items-start gap-4">
-                <div className="w-8 h-8 rounded-full bg-[var(--color-accent-cyan)] text-black font-bold flex items-center justify-center flex-shrink-0">1</div>
-                <div><h3 className="font-bold text-lg">Understand the problem</h3></div>
+                <div className="w-8 h-8 rounded-full bg-slate-900 text-white font-bold flex items-center justify-center flex-shrink-0">1</div>
+                <div><h3 className="font-bold text-lg text-slate-900">Understand the problem</h3></div>
               </div>
               <div className="flex items-start gap-4">
-                <div className="w-8 h-8 rounded-full bg-[var(--color-accent-indigo)] text-white font-bold flex items-center justify-center flex-shrink-0">2</div>
-                <div><h3 className="font-bold text-lg">Shape the product direction</h3></div>
+                <div className="w-8 h-8 rounded-full bg-slate-900 text-white font-bold flex items-center justify-center flex-shrink-0">2</div>
+                <div><h3 className="font-bold text-lg text-slate-900">Shape the product direction</h3></div>
               </div>
               <div className="flex items-start gap-4">
-                <div className="w-8 h-8 rounded-full bg-[var(--color-accent-magenta)] text-white font-bold flex items-center justify-center flex-shrink-0">3</div>
-                <div><h3 className="font-bold text-lg">Define the architecture</h3></div>
+                <div className="w-8 h-8 rounded-full bg-slate-900 text-white font-bold flex items-center justify-center flex-shrink-0">3</div>
+                <div><h3 className="font-bold text-lg text-slate-900">Define the architecture</h3></div>
               </div>
               <div className="flex items-start gap-4">
-                <div className="w-8 h-8 rounded-full bg-[var(--color-accent-cyan)] text-black font-bold flex items-center justify-center flex-shrink-0">4</div>
-                <div><h3 className="font-bold text-lg">Build the first serious version</h3></div>
+                <div className="w-8 h-8 rounded-full bg-slate-900 text-white font-bold flex items-center justify-center flex-shrink-0">4</div>
+                <div><h3 className="font-bold text-lg text-slate-900">Build the first serious version</h3></div>
               </div>
               <div className="flex items-start gap-4">
-                <div className="w-8 h-8 rounded-full bg-[var(--color-accent-indigo)] text-white font-bold flex items-center justify-center flex-shrink-0">5</div>
-                <div><h3 className="font-bold text-lg">Validate and improve</h3></div>
+                <div className="w-8 h-8 rounded-full bg-slate-900 text-white font-bold flex items-center justify-center flex-shrink-0">5</div>
+                <div><h3 className="font-bold text-lg text-slate-900">Validate and improve</h3></div>
               </div>
               <div className="flex items-start gap-4">
-                <div className="w-8 h-8 rounded-full bg-[var(--color-accent-magenta)] text-white font-bold flex items-center justify-center flex-shrink-0">6</div>
-                <div><h3 className="font-bold text-lg">Prepare for scale and maintainability</h3></div>
+                <div className="w-8 h-8 rounded-full bg-slate-900 text-white font-bold flex items-center justify-center flex-shrink-0">6</div>
+                <div><h3 className="font-bold text-lg text-slate-900">Prepare for scale and maintainability</h3></div>
               </div>
             </div>
           </div>
           <div>
             <SectionHeading title="Best Fit Clients" />
             <div className="space-y-4 mt-8">
-              <div className="glass-card p-4 border-l-4 border-l-[var(--color-text-white)] text-[var(--color-text-white)] font-medium">Founders building early products</div>
-              <div className="glass-card p-4 border-l-4 border-l-[var(--color-text-white)] text-[var(--color-text-white)] font-medium">Product teams needing technical execution</div>
-              <div className="glass-card p-4 border-l-4 border-l-[var(--color-text-white)] text-[var(--color-text-white)] font-medium">Businesses modernizing workflows</div>
-              <div className="glass-card p-4 border-l-4 border-l-[var(--color-text-white)] text-[var(--color-text-white)] font-medium">Web3 teams needing responsible tools</div>
-              <div className="glass-card p-4 border-l-4 border-l-[var(--color-text-white)] text-[var(--color-text-white)] font-medium">Communities needing safer visibility tools</div>
-              <div className="glass-card p-4 border-l-4 border-l-[var(--color-text-white)] text-[var(--color-text-white)] font-medium">Small teams needing automation</div>
+              <div className="bg-white p-4 rounded-lg shadow-sm border border-slate-200 border-l-4 border-l-slate-900 text-slate-900 font-medium">Founders building early products</div>
+              <div className="bg-white p-4 rounded-lg shadow-sm border border-slate-200 border-l-4 border-l-slate-900 text-slate-900 font-medium">Product teams needing technical execution</div>
+              <div className="bg-white p-4 rounded-lg shadow-sm border border-slate-200 border-l-4 border-l-slate-900 text-slate-900 font-medium">Businesses modernizing workflows</div>
+              <div className="bg-white p-4 rounded-lg shadow-sm border border-slate-200 border-l-4 border-l-slate-900 text-slate-900 font-medium">Web3 teams needing responsible tools</div>
+              <div className="bg-white p-4 rounded-lg shadow-sm border border-slate-200 border-l-4 border-l-slate-900 text-slate-900 font-medium">Communities needing safer visibility tools</div>
+              <div className="bg-white p-4 rounded-lg shadow-sm border border-slate-200 border-l-4 border-l-slate-900 text-slate-900 font-medium">Small teams needing automation</div>
             </div>
           </div>
         </div>

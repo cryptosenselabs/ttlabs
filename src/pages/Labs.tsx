@@ -19,7 +19,7 @@ export const Labs = () => {
         subtitle="Early-stage product exploration across automation, Web3 safety, payments, community intelligence, and AI-assisted software workflows."
       />
 
-      <section className="py-8 px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto text-center text-lg text-[var(--color-muted-text)] leading-relaxed">
+      <section className="py-8 px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto text-center text-lg text-slate-600 leading-relaxed">
         <p>
           Labs is where Third Leap Labs explores ideas that may become future products. Some concepts may become full platforms. Some may remain internal prototypes. Some may evolve based on user feedback, technical feasibility, and real-world usefulness.
         </p>
@@ -27,7 +27,7 @@ export const Labs = () => {
 
       <section className="py-24 px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto">
         <SectionHeading title="Why Labs Exists" />
-        <div className="prose prose-invert max-w-none text-lg text-[var(--color-muted-text)] leading-relaxed">
+        <div className="prose prose-slate max-w-none text-lg text-slate-600 leading-relaxed">
           <p>
             Not every useful product starts as a complete platform. Some ideas begin as a pattern noticed repeatedly across communities, founders, businesses, or technical workflows. Labs exists to explore those patterns carefully before turning them into full products.
           </p>
@@ -37,7 +37,7 @@ export const Labs = () => {
         </div>
       </section>
 
-      <section className="py-24 px-4 sm:px-6 lg:px-8 bg-[var(--color-secondary-dark)] border-y border-[var(--color-border)]">
+      <section className="py-24 px-4 sm:px-6 lg:px-8 bg-slate-50 border-y border-slate-200">
         <div className="max-w-7xl mx-auto">
           <SectionHeading title="Exploration Areas" />
           
@@ -58,33 +58,33 @@ export const Labs = () => {
         <div>
           <SectionHeading title="How Ideas Move Through Labs" />
           <div className="space-y-6 mt-8">
-            <div className="glass-card p-6 border-l-4 border-l-[var(--color-accent-cyan)]">
-              <h3 className="font-bold mb-2">Step 1: Observation</h3>
-              <p className="text-[var(--color-muted-text)]">We identify repeated problems, unclear workflows, or areas where users need better tools.</p>
+            <div className="bg-white p-6 rounded-lg shadow-sm border border-slate-200 border-l-4 border-l-slate-800">
+              <h3 className="font-bold mb-2 text-slate-900">Step 1: Observation</h3>
+              <p className="text-slate-600">We identify repeated problems, unclear workflows, or areas where users need better tools.</p>
             </div>
-            <div className="glass-card p-6 border-l-4 border-l-[var(--color-accent-indigo)]">
-              <h3 className="font-bold mb-2">Step 2: Prototype</h3>
-              <p className="text-[var(--color-muted-text)]">We create a small working version or structured concept to test the idea.</p>
+            <div className="bg-white p-6 rounded-lg shadow-sm border border-slate-200 border-l-4 border-l-slate-800">
+              <h3 className="font-bold mb-2 text-slate-900">Step 2: Prototype</h3>
+              <p className="text-slate-600">We create a small working version or structured concept to test the idea.</p>
             </div>
-            <div className="glass-card p-6 border-l-4 border-l-[var(--color-accent-magenta)]">
-              <h3 className="font-bold mb-2">Step 3: Validation</h3>
-              <p className="text-[var(--color-muted-text)]">We evaluate whether the idea solves a real problem and whether users understand it.</p>
+            <div className="bg-white p-6 rounded-lg shadow-sm border border-slate-200 border-l-4 border-l-slate-800">
+              <h3 className="font-bold mb-2 text-slate-900">Step 3: Validation</h3>
+              <p className="text-slate-600">We evaluate whether the idea solves a real problem and whether users understand it.</p>
             </div>
-            <div className="glass-card p-6 border-l-4 border-l-[var(--color-accent-cyan)]">
-              <h3 className="font-bold mb-2">Step 4: Product Decision</h3>
-              <p className="text-[var(--color-muted-text)]">The concept may become a product, merge into an existing product, remain experimental, or be discontinued.</p>
+            <div className="bg-white p-6 rounded-lg shadow-sm border border-slate-200 border-l-4 border-l-slate-800">
+              <h3 className="font-bold mb-2 text-slate-900">Step 4: Product Decision</h3>
+              <p className="text-slate-600">The concept may become a product, merge into an existing product, remain experimental, or be discontinued.</p>
             </div>
           </div>
         </div>
         <div>
           <SectionHeading title="What We Avoid" />
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-8">
-            <div className="p-4 bg-[var(--color-primary-dark)] border border-red-500/20 rounded-lg text-center text-sm font-medium">Empty hype</div>
-            <div className="p-4 bg-[var(--color-primary-dark)] border border-red-500/20 rounded-lg text-center text-sm font-medium">Overpromising</div>
-            <div className="p-4 bg-[var(--color-primary-dark)] border border-red-500/20 rounded-lg text-center text-sm font-medium">Misleading financial claims</div>
-            <div className="p-4 bg-[var(--color-primary-dark)] border border-red-500/20 rounded-lg text-center text-sm font-medium">Unsafe wallet behavior</div>
-            <div className="p-4 bg-[var(--color-primary-dark)] border border-red-500/20 rounded-lg text-center text-sm font-medium">Products without real users</div>
-            <div className="p-4 bg-[var(--color-primary-dark)] border border-red-500/20 rounded-lg text-center text-sm font-medium">Complexity for its own sake</div>
+            <div className="p-4 bg-white border border-red-100 shadow-sm rounded-lg text-center text-sm font-medium text-slate-800">Empty hype</div>
+            <div className="p-4 bg-white border border-red-100 shadow-sm rounded-lg text-center text-sm font-medium text-slate-800">Overpromising</div>
+            <div className="p-4 bg-white border border-red-100 shadow-sm rounded-lg text-center text-sm font-medium text-slate-800">Misleading financial claims</div>
+            <div className="p-4 bg-white border border-red-100 shadow-sm rounded-lg text-center text-sm font-medium text-slate-800">Unsafe wallet behavior</div>
+            <div className="p-4 bg-white border border-red-100 shadow-sm rounded-lg text-center text-sm font-medium text-slate-800">Products without real users</div>
+            <div className="p-4 bg-white border border-red-100 shadow-sm rounded-lg text-center text-sm font-medium text-slate-800">Complexity for its own sake</div>
           </div>
         </div>
       </section>

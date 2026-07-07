@@ -20,7 +20,7 @@ export const Roadmap = () => {
         subtitle="A transparent product direction for Third Leap Labs, WhaleScanner, GoPaySol, and future software utilities."
       />
 
-      <section className="py-8 px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto text-center text-lg text-[var(--color-muted-text)] leading-relaxed">
+      <section className="py-8 px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto text-center text-lg text-slate-600 leading-relaxed">
         <p>
           This roadmap explains the current direction of the company and its product portfolio. It is a planning guide, not a guarantee. Priorities may change based on user feedback, technical learning, security considerations, and product maturity.
         </p>
@@ -28,23 +28,23 @@ export const Roadmap = () => {
 
       <section className="py-16 px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto">
         <SectionHeading title="Roadmap Philosophy" />
-        <div className="prose prose-invert max-w-none text-lg text-[var(--color-muted-text)] leading-relaxed">
+        <div className="prose prose-slate max-w-none text-lg text-slate-600 leading-relaxed">
           <p>
             A roadmap should help people understand direction without creating false promises. Third Leap Labs uses roadmap communication to explain what we are building, why it matters, and how the product portfolio may evolve.
           </p>
-          <p className="text-red-400">
+          <p className="text-red-500">
             We do not use roadmap language to promise financial outcomes, guarantee delivery dates, or create artificial urgency.
           </p>
         </div>
       </section>
 
-      <section className="py-24 px-4 sm:px-6 lg:px-8 bg-[var(--color-secondary-dark)] border-y border-[var(--color-border)]">
+      <section className="py-24 px-4 sm:px-6 lg:px-8 bg-slate-50 border-y border-slate-200">
         <div className="max-w-7xl mx-auto space-y-24 relative">
-          <div className="hidden md:block absolute left-1/2 top-0 bottom-0 w-0.5 bg-[var(--color-border)] -translate-x-1/2 z-0"></div>
+          <div className="hidden md:block absolute left-1/2 top-0 bottom-0 w-0.5 bg-slate-200 -translate-x-1/2 z-0"></div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 relative z-10">
             <div className="md:pr-12 md:text-right">
-              <h2 className="text-3xl font-bold mb-6 text-[var(--color-accent-cyan)]">Phase 1: Foundation</h2>
+              <h2 className="text-3xl font-bold mb-6 text-slate-900">Phase 1: Foundation</h2>
               <div className="space-y-4">
                 <FeatureCard title="Corporate Website" description="Create a clean, modern Third Leap Labs website that presents the company as a serious software product studio." />
                 <FeatureCard title="Product Positioning" description="Define clear, responsible positioning for WhaleScanner, GoPaySol, and Labs." />
@@ -54,16 +54,16 @@ export const Roadmap = () => {
               </div>
             </div>
             <div className="hidden md:flex items-center justify-start relative">
-              <div className="w-8 h-8 rounded-full bg-[var(--color-primary-dark)] border-4 border-[var(--color-accent-cyan)] absolute -left-4 z-10"></div>
+              <div className="w-8 h-8 rounded-full bg-white border-4 border-slate-800 absolute -left-4 z-10 shadow-sm"></div>
             </div>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 relative z-10">
             <div className="hidden md:flex items-center justify-end relative">
-              <div className="w-8 h-8 rounded-full bg-[var(--color-primary-dark)] border-4 border-[var(--color-accent-indigo)] absolute -right-4 z-10"></div>
+              <div className="w-8 h-8 rounded-full bg-white border-4 border-slate-800 absolute -right-4 z-10 shadow-sm"></div>
             </div>
             <div className="md:pl-12">
-              <h2 className="text-3xl font-bold mb-6 text-[var(--color-accent-indigo)]">Phase 2: Product Readiness</h2>
+              <h2 className="text-3xl font-bold mb-6 text-slate-900">Phase 2: Product Readiness</h2>
               <div className="space-y-4">
                 <FeatureCard title="WhaleScanner Preview Workflows" description="Shape the first useful wallet visibility workflows, including wallet activity context and large movement visibility." />
                 <FeatureCard title="GoPaySol Payment Link Workflows" description="Prepare payment request pages, QR payment flows, and payment verification concepts." />
@@ -76,7 +76,7 @@ export const Roadmap = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 relative z-10">
             <div className="md:pr-12 md:text-right">
-              <h2 className="text-3xl font-bold mb-6 text-[var(--color-accent-magenta)]">Phase 3: Product Expansion</h2>
+              <h2 className="text-3xl font-bold mb-6 text-slate-900">Phase 3: Product Expansion</h2>
               <div className="space-y-4">
                 <FeatureCard title="Wallet Intelligence Enhancements" description="Expand WhaleScanner with better wallet profiles, behavior summaries, historical views, and suspicious pattern awareness." />
                 <FeatureCard title="Payment Verification Improvements" description="Improve GoPaySol payment verification, receipt views, and seller dashboards." />
@@ -86,16 +86,16 @@ export const Roadmap = () => {
               </div>
             </div>
             <div className="hidden md:flex items-center justify-start relative">
-              <div className="w-8 h-8 rounded-full bg-[var(--color-primary-dark)] border-4 border-[var(--color-accent-magenta)] absolute -left-4 z-10"></div>
+              <div className="w-8 h-8 rounded-full bg-white border-4 border-slate-800 absolute -left-4 z-10 shadow-sm"></div>
             </div>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 relative z-10">
             <div className="hidden md:flex items-center justify-end relative">
-              <div className="w-8 h-8 rounded-full bg-[var(--color-primary-dark)] border-4 border-[var(--color-accent-cyan)] absolute -right-4 z-10"></div>
+              <div className="w-8 h-8 rounded-full bg-white border-4 border-slate-800 absolute -right-4 z-10 shadow-sm"></div>
             </div>
             <div className="md:pl-12">
-              <h2 className="text-3xl font-bold mb-6 text-[var(--color-accent-cyan)]">Phase 4: Mature Product Ecosystem</h2>
+              <h2 className="text-3xl font-bold mb-6 text-slate-900">Phase 4: Mature Product Ecosystem</h2>
               <div className="space-y-4">
                 <FeatureCard title="Connected Product Suite" description="Bring related products together under a clearer Third Leap Labs product ecosystem." />
                 <FeatureCard title="Developer Tools" description="Explore APIs, embeddable components, and integration flows where useful." />

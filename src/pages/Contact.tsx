@@ -26,15 +26,15 @@ export const Contact = () => {
           <div className="w-full lg:w-1/2 space-y-16">
             <div>
               <SectionHeading title="Contact Details" />
-              <div className="bg-[var(--color-secondary-dark)] p-8 rounded-xl border border-[var(--color-border)] space-y-6">
+              <div className="bg-white p-8 rounded-xl border border-slate-200 shadow-sm space-y-6">
                 <div>
-                  <h3 className="font-bold text-xl mb-2">Third Leap Labs LLC</h3>
-                  <div className="flex items-start gap-3 text-[var(--color-muted-text)] mt-4">
-                    <MapPin className="w-5 h-5 flex-shrink-0 mt-1" />
+                  <h3 className="font-bold text-xl mb-2 text-slate-900">Third Leap Labs LLC</h3>
+                  <div className="flex items-start gap-3 text-slate-600 mt-4">
+                    <MapPin className="w-5 h-5 flex-shrink-0 mt-1 text-slate-400" />
                     <p>1209 Mountain Road PL NE STE N<br />Albuquerque, NM 87110 USA</p>
                   </div>
                 </div>
-                <div className="w-full h-48 rounded-lg overflow-hidden border border-[var(--color-border)] mt-4">
+                <div className="w-full h-48 rounded-lg overflow-hidden border border-slate-200 mt-4">
                   <iframe 
                     width="100%" 
                     height="100%" 
@@ -46,10 +46,10 @@ export const Contact = () => {
                     title="Third Leap Labs Location"
                   ></iframe>
                 </div>
-                <div className="pt-6 border-t border-[var(--color-border)]">
-                  <div className="flex items-center gap-3 text-[var(--color-text-white)]">
-                    <Mail className="w-5 h-5 flex-shrink-0 text-[var(--color-accent-cyan)]" />
-                    <a href="mailto:info@thirdleaplabs.com" className="hover:text-[var(--color-accent-cyan)] transition-colors text-lg">info@thirdleaplabs.com</a>
+                <div className="pt-6 border-t border-slate-200">
+                  <div className="flex items-center gap-3 text-slate-900">
+                    <Mail className="w-5 h-5 flex-shrink-0 text-slate-400" />
+                    <a href="mailto:info@thirdleaplabs.com" className="hover:text-slate-600 transition-colors text-lg font-medium">info@thirdleaplabs.com</a>
                   </div>
                 </div>
               </div>
@@ -72,7 +72,7 @@ export const Contact = () => {
 
           <div className="w-full lg:w-1/2 lg:sticky lg:top-24">
             <SectionHeading title="Send a Message" />
-            <div className="bg-[var(--color-secondary-dark)] p-8 rounded-xl border border-[var(--color-border)] shadow-xl relative z-10 overflow-hidden">
+            <div className="bg-white p-8 rounded-xl border border-slate-200 shadow-sm relative z-10 overflow-hidden">
               <ContactForm />
             </div>
           </div>
