@@ -23,19 +23,35 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
     <section className={`relative flex items-center justify-center px-4 sm:px-6 lg:px-8 overflow-hidden bg-[var(--color-navy-bg)] border-b border-white/10 ${
       isMainPage ? 'py-16 md:py-24 min-h-[40vh]' : 'py-24 md:py-32 min-h-[50vh]'
     }`}>
-      {/* Animated subtle background glow */}
+      {/* Base Dark Gradient & CSS Grid Pattern */}
+      <div className="absolute inset-0 bg-gradient-to-b from-[var(--color-navy-bg)] to-[#060B14]" />
+      <div className="absolute inset-0 bg-[linear-gradient(to_right,#ffffff08_1px,transparent_1px),linear-gradient(to_bottom,#ffffff08_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)] pointer-events-none" />
+
+      {/* Animated subtle background glows */}
       <motion.div 
-        animate={{ 
-          scale: [1, 1.1, 1],
-          opacity: [0.1, 0.2, 0.1] 
-        }}
-        transition={{ 
-          duration: 8, 
-          repeat: Infinity,
-          ease: "easeInOut" 
-        }}
-        className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[400px] bg-[var(--color-accent-blue)]/5 blur-[120px] rounded-full pointer-events-none"
+        animate={{ scale: [1, 1.1, 1], opacity: [0.1, 0.15, 0.1] }}
+        transition={{ duration: 10, repeat: Infinity, ease: "easeInOut" }}
+        className="absolute top-0 right-0 -translate-y-1/2 translate-x-1/3 w-[800px] h-[800px] bg-[var(--color-accent-blue)] blur-[120px] rounded-full pointer-events-none"
       />
+      <motion.div 
+        animate={{ scale: [1, 1.2, 1], opacity: [0.05, 0.1, 0.05] }}
+        transition={{ duration: 15, repeat: Infinity, ease: "easeInOut", delay: 2 }}
+        className="absolute bottom-0 left-0 translate-y-1/3 -translate-x-1/3 w-[600px] h-[600px] bg-[var(--color-accent-cyan)] blur-[120px] rounded-full pointer-events-none"
+      />
+
+      {/* Floating Abstract Shapes in Background */}
+      <div className="absolute inset-0 overflow-hidden pointer-events-none">
+        <motion.div 
+          animate={{ y: [0, -30, 0], rotate: [0, 5, 0] }}
+          transition={{ duration: 12, repeat: Infinity, ease: "easeInOut" }}
+          className="absolute top-20 left-[10%] w-64 h-64 border border-white/5 rounded-full bg-gradient-to-br from-white/[0.03] to-transparent backdrop-blur-3xl"
+        />
+        <motion.div 
+          animate={{ y: [0, 40, 0], rotate: [0, -10, 0] }}
+          transition={{ duration: 15, repeat: Infinity, ease: "easeInOut", delay: 1 }}
+          className="absolute bottom-20 right-[15%] w-48 h-48 border border-white/5 rounded-3xl rotate-12 bg-gradient-to-tr from-white/[0.02] to-transparent backdrop-blur-2xl"
+        />
+      </div>
       
       <div className={`relative z-10 w-full ${rightContent ? 'max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center' : 'max-w-4xl mx-auto text-center'}`}>
         
