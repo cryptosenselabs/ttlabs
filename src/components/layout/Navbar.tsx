@@ -11,14 +11,14 @@ export const Navbar = () => {
   const toggleMenu = () => setIsOpen(!isOpen);
 
   const isActive = (path: string) => location.pathname === path;
-  const navLinkClass = (path: string) => `transition-colors text-sm font-medium ${isActive(path) ? 'text-slate-900' : 'text-slate-600 hover:text-slate-900'}`;
+  const navLinkClass = (path: string) => `transition-colors text-sm font-medium ${isActive(path) ? 'text-[var(--color-primary-text)]' : 'text-[var(--color-secondary-text)] hover:text-[var(--color-primary-text)]'}`;
 
   return (
-    <nav className="fixed w-full z-50 bg-white/80 backdrop-blur-md border-b border-slate-200 transition-all duration-300">
+    <nav className="fixed w-full z-50 bg-[var(--color-primary-bg)]/80 backdrop-blur-md border-b border-[var(--color-border-main)] transition-all duration-300">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <div className="flex-shrink-0 flex items-center">
-            <Link to="/" className="text-xl font-bold tracking-tight text-slate-900 flex items-center gap-2 group">
+            <Link to="/" className="text-xl font-bold tracking-tight text-[var(--color-primary-text)] flex items-center gap-2 group">
               <img src="/logo.svg" alt="Third Leap Labs Logo" className="h-6 w-auto" />
               <span>Third Leap Labs</span>
             </Link>
@@ -29,7 +29,7 @@ export const Navbar = () => {
             <Link to="/about" className={navLinkClass('/about')}>About</Link>
             
             <div className="relative group" onMouseEnter={() => setIsProductsOpen(true)} onMouseLeave={() => setIsProductsOpen(false)}>
-              <button className={`flex items-center gap-1 transition-colors text-sm font-medium ${location.pathname.startsWith('/products') ? 'text-slate-900' : 'text-slate-600 hover:text-slate-900'}`}>
+              <button className={`flex items-center gap-1 transition-colors text-sm font-medium ${location.pathname.startsWith('/products') ? 'text-[var(--color-primary-text)]' : 'text-[var(--color-secondary-text)] hover:text-[var(--color-primary-text)]'}`}>
                 Products <ChevronDown className="w-4 h-4 opacity-50 group-hover:opacity-100 transition-opacity" />
               </button>
               
@@ -40,21 +40,21 @@ export const Navbar = () => {
                     animate={{ opacity: 1, y: 0 }}
                     exit={{ opacity: 0, y: 10 }}
                     transition={{ duration: 0.2 }}
-                    className="absolute left-1/2 -translate-x-1/2 mt-4 w-64 rounded-xl shadow-xl py-3 bg-white border border-slate-100 ring-1 ring-black ring-opacity-5"
+                    className="absolute left-1/2 -translate-x-1/2 mt-4 w-64 rounded-xl shadow-xl py-3 bg-[var(--color-card-surface)] border border-[var(--color-border-main)] ring-1 ring-black ring-opacity-5"
                   >
-                    <Link to="/products/whalescanner" className="block px-5 py-3 text-sm text-slate-600 hover:text-slate-900 hover:bg-slate-50 transition-colors">
-                      <div className="font-semibold text-slate-900 mb-0.5 flex items-center gap-2">
+                    <Link to="/products/whalescanner" className="block px-5 py-3 text-sm text-[var(--color-secondary-text)] hover:text-[var(--color-primary-text)] hover:bg-[var(--color-section-surface)] transition-colors">
+                      <div className="font-semibold text-[var(--color-primary-text)] mb-0.5 flex items-center gap-2">
                         <div className="w-2 h-2 rounded-full bg-[var(--color-accent-cyan)]"></div>
                         WhaleScanner
                       </div>
-                      <div className="text-xs text-slate-500">Web3 Intelligence Platform</div>
+                      <div className="text-xs text-[var(--color-muted-text)]">Web3 Intelligence Platform</div>
                     </Link>
-                    <Link to="/products/gopaysol" className="block px-5 py-3 text-sm text-slate-600 hover:text-slate-900 hover:bg-slate-50 transition-colors">
-                      <div className="font-semibold text-slate-900 mb-0.5 flex items-center gap-2">
+                    <Link to="/products/gopaysol" className="block px-5 py-3 text-sm text-[var(--color-secondary-text)] hover:text-[var(--color-primary-text)] hover:bg-[var(--color-section-surface)] transition-colors">
+                      <div className="font-semibold text-[var(--color-primary-text)] mb-0.5 flex items-center gap-2">
                         <div className="w-2 h-2 rounded-full bg-[var(--color-accent-magenta)]"></div>
                         GoPaySol
                       </div>
-                      <div className="text-xs text-slate-500">Solana Payment Workflows</div>
+                      <div className="text-xs text-[var(--color-muted-text)]">Solana Payment Workflows</div>
                     </Link>
                   </motion.div>
                 )}
@@ -68,7 +68,7 @@ export const Navbar = () => {
           </div>
           
           <div className="md:hidden flex items-center">
-            <button onClick={toggleMenu} className="text-slate-600 hover:text-slate-900 focus:outline-none transition-colors">
+            <button onClick={toggleMenu} className="text-[var(--color-secondary-text)] hover:text-[var(--color-primary-text)] focus:outline-none transition-colors">
               {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
             </button>
           </div>
@@ -81,20 +81,20 @@ export const Navbar = () => {
             initial={{ height: 0, opacity: 0 }}
             animate={{ height: 'auto', opacity: 1 }}
             exit={{ height: 0, opacity: 0 }}
-            className="md:hidden overflow-hidden bg-white border-b border-slate-100"
+            className="md:hidden overflow-hidden bg-[var(--color-card-surface)] border-b border-[var(--color-border-main)]"
           >
             <div className="px-4 pt-2 pb-6 space-y-2 shadow-inner">
-              <Link to="/" onClick={toggleMenu} className={`block px-3 py-2 rounded-lg text-sm font-medium transition-colors ${isActive('/') ? 'text-slate-900 bg-slate-50' : 'text-slate-600 hover:text-slate-900 hover:bg-slate-50'}`}>Home</Link>
-              <Link to="/about" onClick={toggleMenu} className={`block px-3 py-2 rounded-lg text-sm font-medium transition-colors ${isActive('/about') ? 'text-slate-900 bg-slate-50' : 'text-slate-600 hover:text-slate-900 hover:bg-slate-50'}`}>About</Link>
-              <div className="px-3 py-2 text-xs font-semibold text-slate-400 uppercase tracking-wider">Products</div>
-              <div className="pl-4 border-l-2 border-slate-100 ml-3 space-y-1">
-                <Link to="/products/whalescanner" onClick={toggleMenu} className="block px-3 py-2 rounded-lg text-sm text-slate-600 hover:text-slate-900 hover:bg-slate-50 transition-colors">WhaleScanner</Link>
-                <Link to="/products/gopaysol" onClick={toggleMenu} className="block px-3 py-2 rounded-lg text-sm text-slate-600 hover:text-slate-900 hover:bg-slate-50 transition-colors">GoPaySol</Link>
+              <Link to="/" onClick={toggleMenu} className={`block px-3 py-2 rounded-lg text-sm font-medium transition-colors ${isActive('/') ? 'text-[var(--color-primary-text)] bg-[var(--color-section-surface)]' : 'text-[var(--color-secondary-text)] hover:text-[var(--color-primary-text)] hover:bg-[var(--color-section-surface)]'}`}>Home</Link>
+              <Link to="/about" onClick={toggleMenu} className={`block px-3 py-2 rounded-lg text-sm font-medium transition-colors ${isActive('/about') ? 'text-[var(--color-primary-text)] bg-[var(--color-section-surface)]' : 'text-[var(--color-secondary-text)] hover:text-[var(--color-primary-text)] hover:bg-[var(--color-section-surface)]'}`}>About</Link>
+              <div className="px-3 py-2 text-xs font-semibold text-[var(--color-muted-text)] uppercase tracking-wider">Products</div>
+              <div className="pl-4 border-l-2 border-[var(--color-border-main)] ml-3 space-y-1">
+                <Link to="/products/whalescanner" onClick={toggleMenu} className="block px-3 py-2 rounded-lg text-sm text-[var(--color-secondary-text)] hover:text-[var(--color-primary-text)] hover:bg-[var(--color-section-surface)] transition-colors">WhaleScanner</Link>
+                <Link to="/products/gopaysol" onClick={toggleMenu} className="block px-3 py-2 rounded-lg text-sm text-[var(--color-secondary-text)] hover:text-[var(--color-primary-text)] hover:bg-[var(--color-section-surface)] transition-colors">GoPaySol</Link>
               </div>
-              <Link to="/services" onClick={toggleMenu} className={`block px-3 py-2 rounded-lg text-sm font-medium transition-colors ${isActive('/services') ? 'text-slate-900 bg-slate-50' : 'text-slate-600 hover:text-slate-900 hover:bg-slate-50'}`}>Services</Link>
-              <Link to="/labs" onClick={toggleMenu} className={`block px-3 py-2 rounded-lg text-sm font-medium transition-colors ${isActive('/labs') ? 'text-slate-900 bg-slate-50' : 'text-slate-600 hover:text-slate-900 hover:bg-slate-50'}`}>Labs</Link>
-              <Link to="/roadmap" onClick={toggleMenu} className={`block px-3 py-2 rounded-lg text-sm font-medium transition-colors ${isActive('/roadmap') ? 'text-slate-900 bg-slate-50' : 'text-slate-600 hover:text-slate-900 hover:bg-slate-50'}`}>Roadmap</Link>
-              <Link to="/contact" onClick={toggleMenu} className={`block px-3 py-2 rounded-lg text-sm font-medium transition-colors ${isActive('/contact') ? 'text-slate-900 bg-slate-50' : 'text-slate-600 hover:text-slate-900 hover:bg-slate-50'}`}>Contact</Link>
+              <Link to="/services" onClick={toggleMenu} className={`block px-3 py-2 rounded-lg text-sm font-medium transition-colors ${isActive('/services') ? 'text-[var(--color-primary-text)] bg-[var(--color-section-surface)]' : 'text-[var(--color-secondary-text)] hover:text-[var(--color-primary-text)] hover:bg-[var(--color-section-surface)]'}`}>Services</Link>
+              <Link to="/labs" onClick={toggleMenu} className={`block px-3 py-2 rounded-lg text-sm font-medium transition-colors ${isActive('/labs') ? 'text-[var(--color-primary-text)] bg-[var(--color-section-surface)]' : 'text-[var(--color-secondary-text)] hover:text-[var(--color-primary-text)] hover:bg-[var(--color-section-surface)]'}`}>Labs</Link>
+              <Link to="/roadmap" onClick={toggleMenu} className={`block px-3 py-2 rounded-lg text-sm font-medium transition-colors ${isActive('/roadmap') ? 'text-[var(--color-primary-text)] bg-[var(--color-section-surface)]' : 'text-[var(--color-secondary-text)] hover:text-[var(--color-primary-text)] hover:bg-[var(--color-section-surface)]'}`}>Roadmap</Link>
+              <Link to="/contact" onClick={toggleMenu} className={`block px-3 py-2 rounded-lg text-sm font-medium transition-colors ${isActive('/contact') ? 'text-[var(--color-primary-text)] bg-[var(--color-section-surface)]' : 'text-[var(--color-secondary-text)] hover:text-[var(--color-primary-text)] hover:bg-[var(--color-section-surface)]'}`}>Contact</Link>
             </div>
           </motion.div>
         )}

@@ -20,7 +20,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
   rightContent
 }) => {
   return (
-    <section className={`relative flex items-center justify-center px-4 sm:px-6 lg:px-8 overflow-hidden border-b border-white/50 ${
+    <section className={`relative flex items-center justify-center px-4 sm:px-6 lg:px-8 overflow-hidden border-b border-[var(--color-border-main)] ${
       isMainPage ? 'py-16 md:py-24 min-h-[40vh]' : 'py-24 md:py-32 min-h-[50vh]'
     }`}>
       {/* Animated subtle background glow */}
@@ -34,7 +34,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
           repeat: Infinity,
           ease: "easeInOut" 
         }}
-        className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[400px] bg-gradient-to-r from-[var(--color-accent-cyan)]/20 via-[var(--color-accent-indigo)]/10 to-[var(--color-accent-magenta)]/20 blur-[100px] rounded-full pointer-events-none"
+        className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[400px] bg-[var(--color-accent-blue)]/5 blur-[120px] rounded-full pointer-events-none"
       />
       
       <div className={`relative z-10 w-full ${rightContent ? 'max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center' : 'max-w-4xl mx-auto text-center'}`}>
@@ -45,7 +45,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
-            className={`font-bold tracking-tight mb-6 text-slate-900 ${isMainPage ? 'text-4xl md:text-5xl lg:text-6xl leading-tight' : 'text-4xl md:text-5xl'}`}
+            className={`font-bold tracking-tight mb-6 text-[var(--color-primary-text)] ${isMainPage ? 'text-4xl md:text-5xl lg:text-6xl leading-tight' : 'text-4xl md:text-5xl'}`}
           >
             {title}
           </motion.h1>
@@ -54,7 +54,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.15, ease: [0.16, 1, 0.3, 1] }}
-            className={`text-xl text-slate-600 mb-10 leading-relaxed ${rightContent ? 'max-w-xl' : 'max-w-2xl mx-auto'}`}
+            className={`text-xl text-[var(--color-secondary-text)] mb-10 leading-relaxed ${rightContent ? 'max-w-xl' : 'max-w-2xl mx-auto'}`}
           >
             {subtitle}
           </motion.p>
@@ -69,11 +69,11 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
               {primaryAction && (
                 <motion.div whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.98 }}>
                   {primaryAction.to.startsWith('http') ? (
-                    <a href={primaryAction.to} target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center px-8 py-3.5 rounded-xl bg-slate-900 text-white font-medium hover:bg-slate-800 transition-all duration-300 shadow-lg hover:shadow-xl hover:-translate-y-0.5 w-full sm:w-auto">
+                    <a href={primaryAction.to} target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center px-8 py-3.5 rounded-xl bg-[var(--color-accent-blue)] text-white font-medium hover:opacity-90 transition-all duration-300 shadow-lg hover:shadow-xl hover:-translate-y-0.5 w-full sm:w-auto">
                       {primaryAction.text}
                     </a>
                   ) : (
-                    <Link to={primaryAction.to} className="inline-flex items-center justify-center px-8 py-3.5 rounded-xl bg-slate-900 text-white font-medium hover:bg-slate-800 transition-all duration-300 shadow-lg hover:shadow-xl hover:-translate-y-0.5 w-full sm:w-auto">
+                    <Link to={primaryAction.to} className="inline-flex items-center justify-center px-8 py-3.5 rounded-xl bg-[var(--color-accent-blue)] text-white font-medium hover:opacity-90 transition-all duration-300 shadow-lg hover:shadow-xl hover:-translate-y-0.5 w-full sm:w-auto">
                       {primaryAction.text}
                     </Link>
                   )}
@@ -82,11 +82,11 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
               {secondaryAction && (
                 <motion.div whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.98 }}>
                   {secondaryAction.to.startsWith('http') ? (
-                    <a href={secondaryAction.to} target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center px-8 py-3.5 rounded-xl bg-white/60 backdrop-blur-md border border-white/80 text-slate-700 font-medium hover:bg-white hover:shadow-lg transition-all duration-300 hover:-translate-y-0.5 w-full sm:w-auto">
+                    <a href={secondaryAction.to} target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center px-8 py-3.5 rounded-xl bg-[var(--color-card-surface)] border border-[var(--color-border-main)] text-[var(--color-primary-text)] font-medium hover:bg-[var(--color-section-surface)] hover:shadow-lg transition-all duration-300 hover:-translate-y-0.5 w-full sm:w-auto">
                       {secondaryAction.text}
                     </a>
                   ) : (
-                    <Link to={secondaryAction.to} className="inline-flex items-center justify-center px-8 py-3.5 rounded-xl bg-white/60 backdrop-blur-md border border-white/80 text-slate-700 font-medium hover:bg-white hover:shadow-lg transition-all duration-300 hover:-translate-y-0.5 w-full sm:w-auto">
+                    <Link to={secondaryAction.to} className="inline-flex items-center justify-center px-8 py-3.5 rounded-xl bg-[var(--color-card-surface)] border border-[var(--color-border-main)] text-[var(--color-primary-text)] font-medium hover:bg-[var(--color-section-surface)] hover:shadow-lg transition-all duration-300 hover:-translate-y-0.5 w-full sm:w-auto">
                       {secondaryAction.text}
                     </Link>
                   )}

@@ -8,10 +8,10 @@ interface FeatureCardProps {
 
 export const FeatureCard: React.FC<FeatureCardProps> = ({ title, description, icon }) => {
   return (
-    <div className="glass-card p-6 border-l-4 border-l-[var(--color-border)] hover:border-l-[var(--color-accent-indigo)] transition-colors h-full">
+    <div className="glass-card p-6 border-l-4 border-l-[var(--color-border-main)] hover:border-l-[var(--color-accent-blue)] transition-colors h-full">
       {icon && <div className="mb-4">{icon}</div>}
-      <h3 className="text-xl font-semibold mb-3 text-slate-900">{title}</h3>
-      <p className="text-slate-600 leading-relaxed text-sm">
+      <h3 className="text-xl font-semibold mb-3 text-[var(--color-primary-text)]">{title}</h3>
+      <p className="text-[var(--color-secondary-text)] leading-relaxed text-sm">
         {description}
       </p>
     </div>
