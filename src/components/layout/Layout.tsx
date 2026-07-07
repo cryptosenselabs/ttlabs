@@ -12,7 +12,7 @@ export const Layout: React.FC<LayoutProps> = ({ children }) => {
     <div className="min-h-screen flex flex-col font-sans">
       <ScrollToTop />
       <Navbar />
-      <main className="flex-grow pt-16 premium-gradient-bg">
+      <main className="flex-grow pt-[72px] premium-gradient-bg">
         {children}
       </main>
       <Footer />

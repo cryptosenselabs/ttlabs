@@ -15,7 +15,7 @@ export const ModernPageHeader: React.FC<ModernPageHeaderProps> = ({
   rightVisual,
 }) => {
   return (
-    <section className="bg-[#F8FAFC] border-b border-[#E2E8F0] pt-[120px] pb-[72px]">
+    <section className="bg-[#F8FAFC] border-b border-[#E2E8F0] pt-[56px] pb-[48px]">
       <div className="mx-auto max-w-[1120px] px-4 sm:px-6 lg:px-8">
         <div className={`grid items-center gap-10 ${rightVisual ? 'lg:grid-cols-[1fr_420px]' : 'grid-cols-1'}`}>
           <div>

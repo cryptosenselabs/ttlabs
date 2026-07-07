@@ -18,7 +18,7 @@ export const Home = () => {
       />
       
       {/* 1. Hero Section (Light-First with Navy Right Card) */}
-      <div className="pt-[96px] pb-[88px] overflow-hidden relative bg-[#F8FAFC]">
+      <div className="pt-[64px] pb-[88px] overflow-hidden relative bg-[#F8FAFC]">
         <div className="max-w-[1120px] mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="flex flex-col lg:flex-row gap-16 items-center justify-between">
             
