@@ -28,9 +28,9 @@ export const Home = () => {
       />
 
       {/* 2. Trust Strip */}
-      <section className="border-b border-[var(--color-border)] bg-[var(--color-secondary-dark)]/50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-5">
-          <div className="flex flex-wrap justify-center gap-6 md:gap-16 text-[var(--color-muted-dark-text)] font-semibold text-xs md:text-sm tracking-widest uppercase">
+      <section className="border-b border-slate-200 bg-slate-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+          <div className="flex flex-wrap justify-center gap-6 md:gap-16 text-slate-500 font-semibold text-xs md:text-sm tracking-widest uppercase">
             <span className="flex items-center gap-2"><Globe className="w-4 h-4 text-[var(--color-accent-cyan)]"/> SaaS Platforms</span>
             <span className="flex items-center gap-2"><Database className="w-4 h-4 text-[var(--color-accent-indigo)]"/> Web3 Utilities</span>
             <span className="flex items-center gap-2"><Zap className="w-4 h-4 text-[var(--color-accent-magenta)]"/> Payment Workflows</span>
@@ -58,7 +58,7 @@ export const Home = () => {
       </section>
 
       {/* 4. Featured Products */}
-      <section className="py-24 px-4 sm:px-6 lg:px-8 bg-[var(--color-secondary-dark)] border-y border-[var(--color-border)] relative overflow-hidden">
+      <section className="py-24 px-4 sm:px-6 lg:px-8 bg-slate-50 border-y border-slate-200 relative overflow-hidden">
         {/* Subtle background glow for products section */}
         <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-[var(--color-accent-cyan)]/5 blur-[120px] rounded-full pointer-events-none" />
         <div className="absolute bottom-0 left-0 w-[600px] h-[600px] bg-[var(--color-accent-magenta)]/5 blur-[120px] rounded-full pointer-events-none" />
@@ -126,11 +126,11 @@ export const Home = () => {
       </section>
 
       {/* 6. Trust & Safety */}
-      <section className="py-24 px-4 sm:px-6 lg:px-8 bg-[#0a0f1d] border-t border-[var(--color-border)] relative">
+      <section className="py-24 px-4 sm:px-6 lg:px-8 bg-white border-t border-slate-200 relative">
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-12 lg:gap-16 items-center">
           <div className="md:col-span-5">
             <SectionHeading title="Trust is part of the product" />
-            <div className="prose prose-invert max-w-none text-lg text-[var(--color-muted-text)] leading-relaxed">
+            <div className="prose max-w-none text-lg text-slate-600 leading-relaxed">
               <p>
                 Third Leap Labs treats trust, clarity, and security as absolute product requirements. Our Web3 products are built with clear boundaries. We do not engage in misleading financial claims or unnecessary risk.
               </p>
@@ -138,21 +138,21 @@ export const Home = () => {
           </div>
           <div className="md:col-span-7">
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-              <div className="glass-card p-6 border border-red-500/20 bg-red-500/5 flex flex-col items-center justify-center text-center">
-                <Lock className="w-8 h-8 text-red-400 mb-3" />
-                <h4 className="font-semibold text-[var(--color-text-white)]">No seed phrases</h4>
+              <div className="glass-card p-6 border border-red-200 bg-red-50 flex flex-col items-center justify-center text-center">
+                <Lock className="w-8 h-8 text-red-500 mb-3" />
+                <h4 className="font-semibold text-slate-900">No seed phrases</h4>
               </div>
-              <div className="glass-card p-6 border border-red-500/20 bg-red-500/5 flex flex-col items-center justify-center text-center">
-                <ShieldCheck className="w-8 h-8 text-red-400 mb-3" />
-                <h4 className="font-semibold text-[var(--color-text-white)]">No private keys</h4>
+              <div className="glass-card p-6 border border-red-200 bg-red-50 flex flex-col items-center justify-center text-center">
+                <ShieldCheck className="w-8 h-8 text-red-500 mb-3" />
+                <h4 className="font-semibold text-slate-900">No private keys</h4>
               </div>
-              <div className="glass-card p-6 border border-orange-500/20 bg-orange-500/5 flex flex-col items-center justify-center text-center">
-                <Activity className="w-8 h-8 text-orange-400 mb-3" />
-                <h4 className="font-semibold text-[var(--color-text-white)]">No financial guarantees</h4>
+              <div className="glass-card p-6 border border-orange-200 bg-orange-50 flex flex-col items-center justify-center text-center">
+                <Activity className="w-8 h-8 text-orange-500 mb-3" />
+                <h4 className="font-semibold text-slate-900">No financial guarantees</h4>
               </div>
-              <div className="glass-card p-6 border border-orange-500/20 bg-orange-500/5 flex flex-col items-center justify-center text-center">
-                <Network className="w-8 h-8 text-orange-400 mb-3" />
-                <h4 className="font-semibold text-[var(--color-text-white)]">No trading signals</h4>
+              <div className="glass-card p-6 border border-orange-200 bg-orange-50 flex flex-col items-center justify-center text-center">
+                <Network className="w-8 h-8 text-orange-500 mb-3" />
+                <h4 className="font-semibold text-slate-900">No trading signals</h4>
               </div>
             </div>
           </div>
