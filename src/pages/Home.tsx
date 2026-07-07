@@ -7,7 +7,7 @@ import { FeatureCard } from '../components/ui/FeatureCard';
 import { CTASection } from '../components/ui/CTASection';
 import { Layout } from '../components/layout/Layout';
 import { SEO } from '../components/layout/SEO';
-import { Code, Database, Globe, Network, ShieldCheck, Zap, Lock, Lightbulb, Blocks, CheckCircle2, RefreshCw } from 'lucide-react';
+import { Code, Database, Globe, Network, ShieldCheck, Zap, Lock, Lightbulb, Blocks, CheckCircle2, RefreshCw, Activity } from 'lucide-react';
 
 export const Home = () => {
   return (
